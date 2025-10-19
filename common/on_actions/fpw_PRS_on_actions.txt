@@ -6,6 +6,7 @@ on_actions = {
 					date > 1868.1.12
 					date < 1868.2.22
 					NOT = { has_idea = prs_fpw_strikes }
+					NOT = { has_idea = prs_fpw_concessions_granted_to_workers }
 				}
 				PRS = {
 					country_event = prussia_fpw.45

@@ -1374,7 +1374,6 @@ ideas = {
 				army_core_defence_factor = 0.025
 				army_attack_factor = 0.025
 				army_defence_factor = 0.025
-				terrain_penalty_reduction = 0.5
 				pocket_penalty = -0.1
 			}
 		}
@@ -1397,7 +1396,6 @@ ideas = {
 				army_core_defence_factor = 0.05
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
-				terrain_penalty_reduction = 0.5
 				pocket_penalty = -0.25
 				stability_factor = -0.25
 				cic_construction_boost = -0.15
@@ -1425,7 +1423,7 @@ ideas = {
 				army_core_defence_factor = 0.075
 				army_attack_factor = 0.075
 				army_defence_factor = 0.075
-				terrain_penalty_reduction = 0.5
+				terrain_penalty_reduction = 0.1
 				pocket_penalty = -0.5
 				stability_factor = -0.5
 				cic_construction_boost = -0.50
@@ -1455,7 +1453,7 @@ ideas = {
 				army_core_defence_factor = 0.075
 				army_attack_factor = 0.075
 				army_defence_factor = 0.075
-				terrain_penalty_reduction = 0.5
+				terrain_penalty_reduction = 0.25
 				pocket_penalty = -0.5
 				cic_construction_boost = -0.25
 				industrial_capacity_factory = 0.1
@@ -1473,6 +1471,21 @@ ideas = {
 			picture = ICE_the_viking_spirit
 			modifier = {
 				justify_war_goal_time = -0.75
+			}
+		}
+		fpw_AFG_liberalize_trade = {
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.2
+				min_export = 0.15
 			}
 		}
 

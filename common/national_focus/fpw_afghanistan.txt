@@ -2479,7 +2479,7 @@
 		id = afg_build_kabul_university
 		icon = GFX_focus_generic_university_3
 		
-		x = 52
+		x = 54
 		y = 3
 		
 		cost = 5
@@ -2498,34 +2498,8 @@
 		}
 	}
 	focus = {
-		id = afg_expand_industrial_research
-		icon = GFX_focus_generic_modernize_industry
-		
-		x = 51
-		y = 4
-		
-		cost = 5
-
-		prerequisite = { focus = afg_build_kabul_university }
-
-		available = {
-		}
-		
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = industry
-			}
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
-		id = afg_expand_military_research
-		icon = GFX_focus_generic_military_industry
+		id = afg_build_more_schools
+		icon = GFX_focus_PER_university_of_isfahan
 		
 		x = 53
 		y = 4
@@ -2538,11 +2512,7 @@
 		}
 		
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
-				category = infantry_weapons
-			}
+			add_research_slot = 1
 		}
 		
 		ai_will_do = {
@@ -2638,35 +2608,13 @@
 		cost = 5
 
 		prerequisite = { focus = afg_mass_literazation_campaigns }
-		prerequisite = { focus = afg_expand_industrial_research }
+		prerequisite = { focus = afg_build_kabul_university }
 
 		available = {
 		}
 		
 		completion_reward = {
 			remove_ideas = fpw_AFG_illiterate_state_three
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
-		id = afg_build_more_schools
-		icon = GFX_focus_PER_university_of_isfahan
-		
-		x = 55
-		y = 6
-		
-		cost = 5
-
-		prerequisite = { focus = afg_truimph_against_illiteracy }
-
-		available = {
-		}
-		
-		completion_reward = {
-			add_research_slot = 1
 		}
 		
 		ai_will_do = {
@@ -3106,48 +3054,16 @@
 		}
 	}
 	focus = {
-		id = afg_clean_election
-		icon = GFX_focus_generic_election
+		id = afg_results_of_elections
+		icon = GFX_focus_usa_voter_registration_act
 		
 		x = 45
-		y = 3
+		y = 3.5
 		
 
 		cost = 1
 		
 		prerequisite = { focus = afg_start_polling }
-
-
-		available = {
-			always = no
-		}
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
-		id = afg_results_of_elections
-		icon = GFX_focus_usa_voter_registration_act
-		
-		x = 45
-		y = 4
-		
-
-		cost = 1
-		
-		prerequisite = { focus = afg_clean_election }
 
 
 		available = {
@@ -3672,6 +3588,60 @@
 			832 = { add_core_of = ROOT }
 			831 = { add_core_of = ROOT }
 			821 = { add_core_of = ROOT }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_root_out_corruption
+		icon = GFX_focus_ARG_anti_corruption_policies
+		
+		x = 2
+		y = 1
+		
+
+		relative_position_id = afg_pax_afghanistan
+
+
+		cost = 10
+		
+		prerequisite = { focus = afg_pax_afghanistan }
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 150
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_liberalize_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		
+		x = -2
+		y = 1
+		
+
+		relative_position_id = afg_pax_afghanistan
+
+
+		cost = 10
+		
+		prerequisite = { focus = afg_pax_afghanistan }
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_AFG_liberalize_trade
+			add_stability = 0.05
 		}
 		
 		ai_will_do = {

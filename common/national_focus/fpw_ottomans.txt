@@ -17,7 +17,11 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = TUR
+			AND = {
+				tag = TUR
+				is_debug = yes
+			}
+			
 		}
 	}
 	
