@@ -1,26 +1,19 @@
-
 state={
-resources={
-wood=1
-}
-
+	resources={
+		wood=1
+	}
 	id=80
 	name="STATE_80"
-
 	history={
+		owner = AUS
+		add_core_of = ROM
 		victory_points = {
 			577 1 
 		}
-		owner = AUS
-		add_core_of = AUS
 		buildings = {
-			infrastructure = 3
-
+			infrastructure = 2
 		}
-		add_core_of = ROM
-
 	}
-
 	provinces={
 		577 6761 9548 11689 
 	}

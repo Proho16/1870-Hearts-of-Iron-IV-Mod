@@ -1,28 +1,21 @@
-
 state={
 	id=982
 	name="STATE_982"
-
 	history={
 		owner = AUS
-		add_core_of = AUS
+		add_core_of = CRO
+		add_core_of = HUN
 		victory_points = {
 			13252 3 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			dockyard = 1
 			11564 = {
 				naval_base = 2
-
 			}
-
 		}
-		add_core_of = HUN
-		add_core_of = CRO
-
 	}
-
 	provinces={
 		591 3601 6611 13252 
 	}

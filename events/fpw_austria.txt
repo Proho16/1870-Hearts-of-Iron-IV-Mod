@@ -78,3 +78,78 @@ country_event = {
 		
 	}
 }
+
+
+country_event = {
+	id = fpw_austria.5
+	title = fpw_austria.5.t
+	desc = fpw_austria.5.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	fire_only_once=yes
+	option = {
+		name = fpw_austria.5.a
+		set_country_flag = hungarian_protests
+		add_stability = -0.05
+		add_war_support = -0.05
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = HUN
+					is_core_of = AUS
+				}
+				remove_core_of = AUS
+				start_resistance = yes
+				set_resistance = 60
+				set_compliance = 20
+			}
+			country_event = {
+				id = fpw_austria.6
+				days = 30
+			}
+		}
+		custom_effect_tooltip = hungarian_protests_effect
+	}
+}
+country_event = {
+	id = fpw_austria.6
+	title = fpw_austria.6.t
+	desc = fpw_austria.6.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	fire_only_once=yes
+	option = {
+		name = fpw_austria.6.a
+		set_country_flag = slavic_revolts
+		add_stability = -0.05
+		add_war_support = -0.05
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = CZE
+					is_core_of = AUS
+				}
+				remove_core_of = AUS
+				start_resistance = yes
+				set_resistance = 40
+				set_compliance = 25
+			}
+			every_owned_state = {
+				limit = {
+					NOT = { is_core_of = AUS }
+					NOT = { is_core_of = CZE }
+					OR = {	
+						is_core_of = POL
+						is_core_of = CRO
+						is_core_of = SLV
+						state = 80
+					}
+				}
+				set_resistance = 70
+				set_compliance = 15
+			}
+		}
+		custom_effect_tooltip = slavic_revolts_effect
+	}
+}
+

@@ -1,0 +1,83 @@
+﻿l_english:
+
+#focuses
+ AUS_austria_in_despair: "Austria in Despair"
+ AUS_austria_in_despair_desc: ""
+ AUS_shadow_of_frankfurt: "The Shadow of Frankfurt"
+ AUS_shadow_of_frankfurt_desc: ""
+ AUS_strengthen_central_power: "Strengthen Central Power"
+ AUS_strengthen_central_power_desc: ""
+ AUS_appease_the_lands: "Appease the Lands"
+ AUS_appease_the_lands_desc: ""
+ AUS_status_of_confed: "State of the Confederation"
+ AUS_status_of_confed_desc: ""
+ AUS_outmaneuver_prussia: "Outmaneuver Prussia"
+ AUS_outmaneuver_prussia_desc: ""
+ AUS_seek_french_support: "Seek French Support"
+ AUS_seek_french_support_desc: ""
+ AUS_holstein_crisis: "Holstein Crisis"
+ AUS_holstein_crisis_desc: ""
+ AUS_prussian_front: "The Prussian Front"
+ AUS_prussian_front_desc: ""
+ AUS_study_prussian_tech: "Study Prussian Technology"
+ AUS_study_prussian_tech_desc: ""
+ AUS_shell_the_prussians: "Shell the Prussians"
+ AUS_shell_the_prussians_desc: ""
+ AUS_italian_front: "The Italian Front"
+ AUS_italian_front_desc: ""
+ AUS_fortify_south_tyrol: "Fortify South Tyrol"
+ AUS_fortify_south_tyrol_desc: ""
+ AUS_utilize_our_navy: "Unleash the Navy"
+ AUS_utilize_our_navy_desc: ""
+ AUS_peace_of_prague: "Peace of Prague"
+ AUS_peace_of_prague_desc: ""
+ AUS_peace_of_vienna: "Peace of Vienna"
+ AUS_peace_of_vienna_desc: ""
+ 
+ AUS_great_humiliation: "Great Humiliation"
+ AUS_great_humiliation_desc: ""
+ AUS_prepare_for_whats_coming: "Prepare for What's Coming"
+ AUS_prepare_for_whats_coming_desc: ""
+ AUS_reform_the_army: "Reform the Army"
+ AUS_reform_the_army_desc: ""
+ AUS_trouble_in_hungary: "Trouble in Hungary"
+ AUS_trouble_in_hungary_desc: ""
+ AUS_push_for_reforms: "Push for Reforms"
+ AUS_push_for_reforms_desc: ""
+ AUS_slavic_revolts: "Slavic Revolts"
+ AUS_slavic_revolts_desc: ""
+ AUS_austria_indivisible: "Austria Indivisible"
+ AUS_austria_indivisible_desc: ""
+ AUS_the_ausgleich: "The Ausgleich of [GetYear]"
+ AUS_the_ausgleich_desc: ""
+ AUS_multiethnic_empire: "Multiethnic Empire"
+ AUS_multiethnic_empire_desc: "Just one more crown will save it!"
+ 
+ 
+#decisions
+ 
+#ideas
+ 
+#events
+ fpw_austria.5.t: "Hungarian Protests"
+ fpw_austria.5.d: ""
+ fpw_austria.5.a: "Is it 1848 all over again?"
+ 
+#traits 
+ 
+#custom cost texts 
+ 
+#custom effect tooltips
+ hungarian_protests_effect: "Every §YHungarian§! state stops being a core of §YAustria§! \n Start §RResistance§!: 60.0% \n Start §CCompliance§!: 20.0%"
+ slavic_revolts_effect: "Every §YSlavic§! state stops being a core of §YAustria§! \n Start §RResistance§! \n Start §CCompliance§!"
+ 
+#custom modifier tooltips
+ 
+#scripted gui text
+ 
+#leaders
+ 
+#opinion modifiers
+ 
+#cosmetic nation/ideology names
+ 
