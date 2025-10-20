@@ -534,4 +534,26 @@ script_enum_equipment_bonus_type = {
 	fpw_supply_wagon_equipment
 	fpw_supply_wagon_equipment_0
 	fpw_supply_wagon_equipment_1
+	## Adding those to remove errors ## Will Properöy reorg later day @Mtio
+	land_cruiser_chassis_1
+	super_heavy_artillery_equipment_1
+	strat_bomber_intercontinental_equipment
+	mothership_equipment
+	small_plane_airframe_5
+	supersonic_fighter_equipment_1
+	helicopter_equipment
+	self_propelled_super_heavy_artillery_equipment_1
+	cruiser_submarine not in script_enum_equipment_bonus_type
+	rocket_submarine
+	fleet_submarine
+	nuclear_missile_submarine
+	midget_submarine
+	modern_battleship
+	ship_hull_heavy_modern
+	ship_hull_carrier_modern
+	modern_carrier
+	mega_carrier
+	ship_hull_mega_carrier
+	ballistic_missile_equipment
+	sam_missile_equipment
 }
