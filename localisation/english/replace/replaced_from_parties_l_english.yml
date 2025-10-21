@@ -81,4 +81,16 @@
  SOV_communism_party_long: "The Narodniks"
  SOV_neutrality_party: "House of Romanov"
  SOV_neutrality_party_long: "House of Romanov"
+
  
+ SPR_communism_party_long:0 "Partido Progresista"
+ SPR_communism_party:0 "Partido Progresista"
+
+ SPR_democratic_party_long:0 "Partido Moderado"
+ SPR_democratic_party:0 "Partido Moderado"
+
+ SPR_neutrality_party_long:0 "Movimiento Carlista"
+ SPR_neutrality_party:0 "Movimiento Carlista"
+
+ SPR_fascism_party_long:0 "Unión Liberal"
+ SPR_fascism_party:0 "Unión Liberal"

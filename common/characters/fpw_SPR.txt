@@ -8,7 +8,20 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=monarchism
+			ideology=liberal_semi_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	SPR_leopoldo_o_donnell={
+		name="Leopoldo O'Donnell"
+		portraits={
+			civilian={
+				large="gfx/leaders/spr/leopoldo.png"
+			}
+		}
+		country_leader={
+			ideology=liberal_semi_constitutional_monarchism
 			expire="1956.01.01.01"
 			id=-1
 		}

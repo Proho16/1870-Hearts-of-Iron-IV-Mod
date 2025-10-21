@@ -505,3 +505,59 @@ country_event = {
 		}
 	}
 }
+country_event = { # Pronunciamiento de villarejo de salvanes por prim (progre), 3 enero 1866
+	id = spain_fpw.6
+	title = spain_fpw.6.t
+	desc = spain_fpw.6.d
+	picture = gfx_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = spain_fpw.6.a
+	}
+}
+
+country_event = { # sublevacion del cuartel de artilleria de san gil,caused by progressives and democrats, 22 june 1866
+	id = spain_fpw.7
+	title = spain_fpw.7.t
+	desc = spain_fpw.7.d
+	picture = gfx_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = spain_fpw.7.a
+	}
+}
+country_event = { # responce to isabella II request to kill all arrested insurrectors
+	id = spain_fpw.8
+	title = spain_fpw.8.t
+	desc = spain_fpw.8.d
+	picture = gfx_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # hell nah (historical) will lead to removal of o'donnell as president of government, and replace him with narvaez
+		name = spain_fpw.8.a
+	}
+	option = { # hell yes 
+		name = spain_fpw.8.b
+	}
+}
+country_event = { # removal of o'donnell as president of government, and replace him with narvaez (july 1866)
+	id = spain_fpw.9
+	title = spain_fpw.9.t
+	desc = spain_fpw.9.d
+	picture = gfx_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = spain_fpw.9.a
+	}
+}
