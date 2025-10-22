@@ -1,0 +1,16 @@
+l_german:
+
+##### DECISIONS
+  fpw_afg_investment_chances_dec:0 "Investierungsmöglichkeiten"
+  fpw_ask_prussia:0 "Frag die Preußen um Investitionen"
+  fpw_ask_france:0 "Frag die Franzosen um Investitionen"
+  fpw_ask_britain:0 "Frag die Briten um Investitionen"
+  fpw_afg_army_modernization:0 "Armee Modernisierung"
+  fpw_modernize_infantry_eq:0 "Infanterieausrüstung modernisieren"
+  fpw_modernize_support_eq:0 "Zusatzausrüstung modernisieren"
+  fpw_modernize_calvary:0 "Kavallerie modernisieren"
+  fpw_modernize_artillery:0 "Artillerie modernisieren"
+  fpw_sher_ali_khans_reforms:0 "Sher Ali Khans Reformen"
+  fpw_promote_common_welfare:0 "Förderung des Gemeinwohls"
+  fpw_establish_justice_systems:0 "Justizsysteme errichten"
+  fpw_reorginize_the_bureaucracy:0 "Bürokratie umstrukturieren"
