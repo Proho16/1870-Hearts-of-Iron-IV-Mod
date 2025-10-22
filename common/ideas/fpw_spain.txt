@@ -129,6 +129,44 @@ ideas = {
 				communism_drift = 0.02
 			}
 		}
+		SPR_idea_o_todo_o_nada_2 = {
+			name = SPR_idea_o_todo_o_nada
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = gfx_
+
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.1
+				communism_drift = 0.03
+			}
+		}
+		SPR_idea_o_todo_o_nada_3 = {
+			name = SPR_idea_o_todo_o_nada
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = gfx_
+
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.15
+				communism_drift = 0.03
+				army_core_defence_factor = -0.1
+				army_morale_factor = -0.15
+				stability_weekly_factor = -0.02
+				war_support_factor = -0.15
+				#power_balance_daily = 0.01
+				army_core_attack_factor = -0.15
+			}
+		}
 		SPR_idea_carlist_movement = {
 			allowed = {
 				always = no
@@ -161,6 +199,25 @@ ideas = {
 				#power_balance_daily = 0.01
 			}
 		}
+		SPR_idea_isabel_ii_2 = {
+			name = SPR_idea_isabel_ii
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = gfx_
+
+			modifier = {
+				political_power_gain = 0.15
+				drift_defence_factor = 0.2
+				fascism_drift = 0.01
+				stability_factor = -0.1
+				democratic_drift = 0.01
+				#power_balance_daily = 0.01
+			}
+		}
 		SPR_idea_excessive_amount_of_officers = {
 			allowed = {
 				always = no
@@ -181,6 +238,24 @@ ideas = {
 				field_officer_promotion_penalty = -0.4
 				army_defence_factor = -0.1
 				army_attack_factor = -0.1
+			}
+		}
+		SPR_idea_first_wave_of_social_unrest = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+
+			modifier = {
+				political_advisor_cost_factor = 0.35
+				disabled_ideas = 1
+				political_power_factor = -0.25
+				stability_factor = -0.25
+				fascism_drift = -0.03
+				democratic_drift = -0.03
 			}
 		}
 

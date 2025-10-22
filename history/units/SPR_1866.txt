@@ -1,6 +1,11 @@
+focus = {
+    current = "SPR_guerra_del_pacifico"
+    progress = 67
+}
+
 division_template = {
-  name = "Militia-Division"
-  is_locked = no
+  name = "Guardia Civil"
+  is_locked = yes
 
   regiments = {
     irregular_infantry = { x = 0 y = 0 }
@@ -10,7 +15,7 @@ division_template = {
   }
 }
 division_template = {
-  name = "Infantry-Division"
+  name = "Regimiento de Infantería"
   is_locked = no
 
   regiments = {
@@ -18,28 +23,27 @@ division_template = {
     infantry = { x = 0 y = 1 }
     infantry = { x = 1 y = 0 }
     infantry = { x = 1 y = 1 }
+	infantry = { x = 0 y = 2 }
   }
 }
 division_template = {
-  name = "Cavalry-Division"
+  name = "Regimiento de Caballería"
   is_locked = no
 
   regiments = {
     cavalry = { x = 0 y = 0 }
     cavalry = { x = 0 y = 1 }
     cavalry = { x = 1 y = 0 }
-    cavalry = { x = 1 y = 1 }
   }
 }
 division_template = {
-  name = "Artillery-Division"
+  name = "Regimiento de Artillería de Campaña"
   is_locked = no
 
   regiments = {
     infantry = { x = 0 y = 0 }
     infantry = { x = 0 y = 1 }
-    infantry = { x = 1 y = 0 }
-    infantry = { x = 1 y = 1 }
+    cannon_brigade = { x = 1 y = 1 }
   }
   support = {
     cannon_artillery = { x = 0 y = 0 }
@@ -52,16 +56,7 @@ units = {
 			name_order = 1
 		}
 		location = 809
-		division_template = "Militia-Division"
-		start_experience_factor = 0.1
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 794
-		division_template = "Militia-Division"
+		division_template = "Guardia Civil"
 		start_experience_factor = 0.1
 	}
 	division = {
@@ -70,7 +65,7 @@ units = {
 			name_order = 1
 		}
 		location = 11737
-		division_template = "Infantry-Division"
+		division_template = "Regimiento de Infantería"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -79,34 +74,7 @@ units = {
 			name_order = 2
 		}
 		location = 7068
-		division_template = "Infantry-Division"
-		start_experience_factor = 0.3
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 7196
-		division_template = "Infantry-Division"
-		start_experience_factor = 0.3
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 9842
-		division_template = "Infantry-Division"
-		start_experience_factor = 0.3
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 899
-		division_template = "Infantry-Division"
+		division_template = "Regimiento de Infantería"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -115,7 +83,7 @@ units = {
 			name_order = 6
 		}
 		location = 9778
-		division_template = "Infantry-Division"
+		division_template = "Regimiento de Infantería"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -124,7 +92,7 @@ units = {
 			name_order = 7
 		}
 		location = 10009
-		division_template = "Infantry-Division"
+		division_template = "Regimiento de Infantería"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -133,7 +101,7 @@ units = {
 			name_order = 1
 		}
 		location = 4080
-		division_template = "Cavalry-Division"
+		division_template = "Regimiento de Caballería"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -142,7 +110,7 @@ units = {
 			name_order = 2
 		}
 		location = 10094
-		division_template = "Cavalry-Division"
+		division_template = "Regimiento de Caballería"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -151,7 +119,7 @@ units = {
 			name_order = 3
 		}
 		location = 11819
-		division_template = "Cavalry-Division"
+		division_template = "Regimiento de Caballería"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -160,7 +128,7 @@ units = {
 			name_order = 1
 		}
 		location = 7213
-		division_template = "Artillery-Division"
+		division_template = "Regimiento de Artillería de Campaña"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -169,7 +137,7 @@ units = {
 			name_order = 2
 		}
 		location = 4195
-		division_template = "Artillery-Division"
+		division_template = "Regimiento de Artillería de Campaña"
 		start_experience_factor = 0.3
 	}
 }

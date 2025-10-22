@@ -5,6 +5,11 @@ set_cosmetic_tag = SPR_kingdom
 
 recruit_character = SPR_leopoldo_o_donnell
 
+recruit_character = SPR_juan_prim
+recruit_character = SPR_juan_iii # in exile tho
+recruit_character = SPR_ramon_maria_narvaez
+
+
 #recruit_character = SPR_isabella_ii
 
 recruit_character = SPR_amadeo_i

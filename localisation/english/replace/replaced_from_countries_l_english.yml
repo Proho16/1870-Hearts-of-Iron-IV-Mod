@@ -175,6 +175,18 @@
  SOV_DEF: "Russia"
  SOV_ADJ: "Russian"
 
+ SPR_fascism: "Kingdom of Spain"
+ SPR_fascism_DEF: "the Kingdom of Spain"
+ SPR_democratic: "Kingdom of Spain"
+ SPR_democratic_DEF: "the Kingdom of Spain"
+ SPR_neutrality: "Kingdom of Spain"
+ SPR_neutrality_DEF: "the Kingdom of Spain"
+ SPR_communism: "Spanish Republic"
+ SPR_communism_DEF: "the Spanish Republic"
+ SPR: "Spain"
+ SPR_DEF: "Spain"
+ SPR_ADJ: "Spanish"
+
  VIN_fascism:0 "Republic of Dai Nam"
  VIN_fascism_DEF:0 "the Republic of Dai Nam"
  VIN_democratic:0 "Republic of Dai Nam"

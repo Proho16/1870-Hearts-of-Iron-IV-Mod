@@ -1,6 +1,6 @@
 characters={
 
-	SPR_isabella_ii={
+	SPR_isabella_ii={ # nobody wants her bruh
 		name="Isabella II"
 		portraits={
 			civilian={
@@ -13,15 +13,80 @@ characters={
 			id=-1
 		}
 	}
-	SPR_leopoldo_o_donnell={
+	SPR_leopoldo_o_donnell={ # LIBERAL
 		name="Leopoldo O'Donnell"
 		portraits={
 			civilian={
-				large="gfx/leaders/spr/leopoldo.png"
+				large="gfx/leaders/SPR/leopoldo.png"
 			}
 		}
 		country_leader={
 			ideology=liberal_semi_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	SPR_juan_prim={ # PROGRESSIVE (MILITARY)
+		name="Juan Prim"
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/juan_prim.png"
+			}
+		}
+		country_leader={
+			ideology=progressivism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	SPR_ramon_maria_narvaez={ # MODERATE
+		name="Ramón María Narváez"
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/ramon_narvaez.png"
+			}
+		}
+		country_leader={
+			ideology=conservative_semi_constitutional_monarchism
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	SPR_francisco_navarro_villoslada={ # CARLIST SECRETARY 1869-1871
+		name="Francisco Navarro Villoslada"
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/leopoldo.png"
+			}
+		}
+		country_leader={
+			ideology=interim_government
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	SPR_juan_iii={ # CARLIST KING JUAN III/Juan Carlos María Isidro de Borbón y Braganza 1861-1868
+		name="Juan III"
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/juan_iii.png"
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
+			expire="1956.01.01.01"
+			id=-1
+		}
+	}
+	SPR_carlos_vii={ # CARLIST KING carlos vii/Carlos de Borbón y Austria-Este 1868-1909
+		name="Carlos VII"
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/leopoldo.png"
+			}
+		}
+		country_leader={
+			ideology=aboslute_monarchy
 			expire="1956.01.01.01"
 			id=-1
 		}
