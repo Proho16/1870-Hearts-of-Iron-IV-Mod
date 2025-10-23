@@ -50,5 +50,139 @@ ideas = {
 				resistance_activity = 0.2
             }
 		}
+		
+		AUS_hungary_loyal = {
+			picture = HUN_hungarian_monarchy
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.15
+				war_support_factor = 0.15
+            }
+		}
+		AUS_hungary_friendly = {
+			picture = HUN_hungarian_monarchy
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				war_support_factor = 0.05
+            }
+		}
+		AUS_hungary_neutral = {
+			picture = HUN_hungarian_monarchy
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+            }
+		}
+		AUS_hungary_hostile = {
+			picture = HUN_hungarian_monarchy
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.15
+				war_support_factor = -0.15
+            }
+		}
+		
+		AUS_czech_loyal = {
+			picture = CZE_skoda_works
+			modifier = {
+				consumer_goods_factor = -0.20
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+            }
+		}
+		AUS_czech_friendly = {
+			picture = CZE_skoda_works
+			modifier = {
+				consumer_goods_factor = -0.10
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+            }
+		}
+		AUS_czech_neutral = {
+			picture = CZE_skoda_works
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+            }
+		}
+		AUS_czech_hostile = {
+			picture = CZE_skoda_works
+			modifier = {
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+            }
+		}
+		
+		AUS_galicia_loyal = {
+			picture = POL_looming_peasants_strike
+			modifier = {
+				stability_factor = 0.10
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+            }
+		}
+		AUS_galicia_friendly = {
+			picture = POL_looming_peasants_strike
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.05
+            }
+		}
+		AUS_galicia_neutral = {
+			picture = POL_looming_peasants_strike
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.10
+            }
+		}
+		AUS_galicia_hostile = {
+			picture = POL_looming_peasants_strike
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.20
+            }
+		}
+		
+		AUS_illyria_loyal = {
+			picture = ROM_balkans_dominance
+			modifier = {
+				war_support_factor = 0.10
+				resistance_target = -0.20
+				compliance_growth = 0.20
+            }
+		}
+		AUS_illyria_friendly = {
+			picture = ROM_balkans_dominance
+			modifier = {
+				war_support_factor = 0.05
+				resistance_target = -0.10
+				compliance_growth = 0.10
+            }
+		}
+		AUS_illyria_neutral = {
+			picture = ROM_balkans_dominance
+			modifier = {
+				war_support_factor = -0.05
+				resistance_target = 0.20
+				compliance_growth = -0.10
+            }
+		}
+		AUS_illyria_hostile = {
+			picture = ROM_balkans_dominance
+			modifier = {
+				war_support_factor = -0.10
+				resistance_target = 0.40
+				compliance_growth = -0.20
+            }
+		}
+		
+		
 	}
 }

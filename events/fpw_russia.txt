@@ -540,22 +540,24 @@ country_event = {
 	title = russia_fpw.18.t
 	desc = russia_fpw.18.d
 	picture = GFX_report_event_generic_handshake
-	
 	is_triggered_only = yes
- 
 	option = {
 		name = russia_fpw.18.a
-		
-		
 	}
 	option = {
 		name = russia_fpw.18.b
-		
-		add_political_power = 10
-		
+		IF = {
+			limit = {
+				NOT = {
+					has_country_flag = no_more_pp_for_antopru
+				}
+			}
+			add_political_power = 10
+		}
+		hidden_effect = {
+			set_country_flag = no_more_pp_for_antopru
+		}
 	}
-	
-	
 }
 
 # Polish uprising

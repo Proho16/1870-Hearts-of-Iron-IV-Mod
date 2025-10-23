@@ -1,396 +1,260 @@
-AUS_population_of_the_empire_update_effect = {
-	set_variable = { var = AUS_political_instability_stability_factor value = 0 }
-	set_variable = { var = AUS_political_instability_recruitable_pop_factor	value = 0 }
-
-	### hungarians
-	if = {
+AUS_increse_hungraian_attitude_effect = {
+	IF = {
 		limit = {
-			check_variable = { var = AUS_hungarians_loyalty value = 2 }
+			has_idea = AUS_hungary_hostile
 		}
-		set_variable = { var = AUS_hungarians_stability value = 10 }
-		set_variable = { var = AUS_hungarians_manpower value = 20 }
-		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.1 }
-		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.2 }
+		swap_ideas = {
+			remove_idea = AUS_hungary_hostile
+			add_idea = AUS_hungary_neutral
+		}
 	}
-	else_if = {
+	ELSE_IF = {
 		limit = {
-			check_variable = { var = AUS_hungarians_loyalty value = 1 }
+			has_idea = AUS_hungary_neutral
 		}
-		set_variable = { var = AUS_hungarians_stability value = 5 }
-		set_variable = { var = AUS_hungarians_manpower value = 15 }
-		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.05 }
-		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.15 }
+		swap_ideas = {
+			remove_idea = AUS_hungary_neutral
+			add_idea = AUS_hungary_friendly
+		}
 	}
-	else_if = {
+	ELSE_IF = {
 		limit = {
-			check_variable = { var = AUS_hungarians_loyalty value = 0 }
+			has_idea = AUS_hungary_friendly
 		}
-		set_variable = { var = AUS_hungarians_stability value = 0 }
-		set_variable = { var = AUS_hungarians_manpower value = 0 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { var = AUS_hungarians_loyalty value = -1 }
+		swap_ideas = {
+			remove_idea = AUS_hungary_friendly
+			add_idea = AUS_hungary_loyal
 		}
-		set_variable = { var = AUS_hungarians_stability value = -15 }
-		set_variable = { var = AUS_hungarians_manpower value = -10 }
-		subtract_from_variable = { var = AUS_political_instability_stability_factor value = 0.15 }
-		subtract_from_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.1 }
 	}
-	### croats
-	if = {
-		limit = {
-			check_variable = { var = AUS_croats_loyalty value = 2 }
-		}
-		set_variable = { var = AUS_croats_stability value = 10 }
-		set_variable = { var = AUS_croats_manpower value = 20 }
-		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.1 }
-		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.2 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { var = AUS_croats_loyalty value = 1 }
-		}
-		set_variable = { var = AUS_croats_stability value = 5 }
-		set_variable = { var = AUS_croats_manpower value = 15 }
-		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.05 }
-		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.15 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { var = AUS_croats_loyalty value = 0 }
-		}
-		set_variable = { var = AUS_croats_stability value = 0 }
-		set_variable = { var = AUS_croats_manpower value = 0 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { var = AUS_croats_loyalty value = -1 }
-		}
-		set_variable = { var = AUS_croats_stability value = -15 }
-		set_variable = { var = AUS_croats_manpower value = -10 }
-		subtract_from_variable = { var = AUS_political_instability_stability_factor value = 0.15 }
-		subtract_from_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.1 }
-	}
-	### slovaks
-	if = {
-		limit = {
-			check_variable = { var = AUS_slovaks_loyalty value = 2 }
-		}
-		set_variable = { var = AUS_slovaks_stability value = 10 }
-		set_variable = { var = AUS_slovaks_manpower value = 20 }
-		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.1 }
-		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.2 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { var = AUS_slovaks_loyalty value = 1 }
-		}
-		set_variable = { var = AUS_slovaks_stability value = 5 }
-		set_variable = { var = AUS_slovaks_manpower value = 15 }
-		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.05 }
-		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.15 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { var = AUS_slovaks_loyalty value = 0 }
-		}
-		set_variable = { var = AUS_slovaks_stability value = 0 }
-		set_variable = { var = AUS_slovaks_manpower value = 0 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { var = AUS_slovaks_loyalty value = -1 }
-		}
-		set_variable = { var = AUS_slovaks_stability value = -15 }
-		set_variable = { var = AUS_slovaks_manpower value = -10 }
-		subtract_from_variable = { var = AUS_political_instability_stability_factor value = 0.15 }
-		subtract_from_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.1 }
-	}
-	if = {
-		limit = {
-			check_variable = { var = AUS_czechs_loyalty value = 2 }
-		}
-		set_variable = { var = AUS_czechs_stability value = 10 }
-		set_variable = { var = AUS_czechs_manpower value = 20 }
-		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.1 }
-		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.2 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { var = AUS_czechs_loyalty value = 1 }
-		}
-		set_variable = { var = AUS_czechs_stability value = 5 }
-		set_variable = { var = AUS_czechs_manpower value = 15 }
-		add_to_variable = { var = AUS_political_instability_stability_factor value = 0.05 }
-		add_to_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.15 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { var = AUS_czechs_loyalty value = 0 }
-		}
-		set_variable = { var = AUS_czechs_stability value = 0 }
-		set_variable = { var = AUS_czechs_manpower value = 0 }
-	}
-	else_if = {
-		limit = {
-			check_variable = { var = AUS_czechs_loyalty value = -1 }
-		}
-		set_variable = { var = AUS_czechs_stability value = -15 }
-		set_variable = { var = AUS_czechs_manpower value = -10 }
-		subtract_from_variable = { var = AUS_political_instability_stability_factor value = 0.15 }
-		subtract_from_variable = { var = AUS_political_instability_recruitable_pop_factor value = 0.1 }
-	}
-
-	force_update_dynamic_modifier = yes
-}
-
-AUS_befriend_hungarians = {
-	custom_effect_tooltip = fpw_befriend_hungarians_tt
-	hidden_effect = {
-		add_to_variable = { var = AUS_hungarians_loyalty value = 1 }
-		AUS_population_of_the_empire_update_effect = yes
+	ELSE = {
+		add_political_power = 50
 	}
 }
-
-AUS_crush_hungarians = {
-	if = {
+AUS_decrese_hungraian_attitude_effect = {
+	IF = {
 		limit = {
-			check_variable = { var = AUS_hungarians_loyalty value = -1 compare = equals }
+			has_idea = AUS_hungary_loyal
 		}
-		custom_effect_tooltip = fpw_civil_war_hungarians_tt
-		hidden_effect = {
-			# civil war
-			every_state = {
-				limit = {
-					AND = {
-						is_owned_by = AUS
-						is_core_of = HUN
-					}
-				}
-				HUN = {
-					transfer_state = PREV	
-				}
-			}
-
-			# no more hungarians, no more debuffs from hungarians
-			set_variable = { var = AUS_hungarians_loyalty value = 0 }
-			AUS_population_of_the_empire_update_effect = yes
-			HUN = {
-				declare_war_on = {
-					target = AUS
-					type = independence_wargoal
-				}
-			}	
-		}
-	} else = {
-		custom_effect_tooltip = fpw_crush_hungarians_tt
-		hidden_effect = {
-			subtract_from_variable = { var = AUS_hungarians_loyalty value = 1 }
-			AUS_population_of_the_empire_update_effect = yes
+		swap_ideas = {
+			remove_idea = AUS_hungary_loyal
+			add_idea = AUS_hungary_friendly
 		}
 	}
-}
-
-AUS_befriend_croats = {
-	custom_effect_tooltip = fpw_befriend_croats_tt
-	hidden_effect = {
-		add_to_variable = { var = AUS_croats_loyalty value = 1 }
-		AUS_population_of_the_empire_update_effect = yes
-	}
-}
-
-AUS_crush_croats = {
-	if = {
+	ELSE_IF = {
 		limit = {
-			check_variable = { var = AUS_croats_loyalty value = -1 compare = equals }
+			has_idea = AUS_hungary_friendly
 		}
-		custom_effect_tooltip = fpw_civil_war_croats_tt
-		hidden_effect = {
-			# civil war
-			every_state = {
-				limit = {
-					AND = {
-						is_owned_by = AUS
-						is_core_of = CRO
-					}
-				}
-				CRO = {
-					transfer_state = PREV	
-				}
-			}
-
-			# no more hungarians, no more debuffs from hungarians
-			set_variable = { var = AUS_croats_loyalty value = 0 }
-			AUS_population_of_the_empire_update_effect = yes
-			CRO = {
-				declare_war_on = {
-					target = AUS
-					type = independence_wargoal
-				}
-			}	
-		}
-	} else = {
-		custom_effect_tooltip = fpw_crush_croats_tt
-		hidden_effect = {
-			subtract_from_variable = { var = AUS_croats_loyalty value = 1 }
-			AUS_population_of_the_empire_update_effect = yes
+		swap_ideas = {
+			remove_idea = AUS_hungary_friendly
+			add_idea = AUS_hungary_neutral
 		}
 	}
-}
-
-AUS_befriend_slovak = {
-	custom_effect_tooltip = fpw_befriend_slovaks_tt
-	hidden_effect = {
-		add_to_variable = { var = AUS_slovaks_loyalty value = 1 }
-		AUS_population_of_the_empire_update_effect = yes
-	}
-}
-
-AUS_crush_slovaks = {
-	if = {
+	ELSE_IF = {
 		limit = {
-			check_variable = { var = AUS_slovaks_loyalty value = -1 compare = equals }
+			has_idea = AUS_hungary_neutral
 		}
-		custom_effect_tooltip = fpw_civil_war_slovaks_tt
-		hidden_effect = {
-			# civil war
-			every_state = {
-				limit = {
-					AND = {
-						is_owned_by = AUS
-						is_core_of = SLO
-					}
-				}
-				SLO = {
-					transfer_state = PREV	
-				}
-			}
-
-			# no more hungarians, no more debuffs from hungarians
-			set_variable = { var = AUS_slovaks_loyalty value = 0 }
-			AUS_population_of_the_empire_update_effect = yes
-			SLO = {
-				declare_war_on = {
-					target = AUS
-					type = independence_wargoal
-				}
-			}	
-		}
-	} else = {
-		custom_effect_tooltip = fpw_crush_slovaks_tt
-		hidden_effect = {
-			subtract_from_variable = { var = AUS_slovaks_loyalty value = 1 }
-			AUS_population_of_the_empire_update_effect = yes
+		swap_ideas = {
+			remove_idea = AUS_hungary_neutral
+			add_idea = AUS_hungary_hostile
 		}
 	}
-}
-
-AUS_befriend_czechs = {
-	custom_effect_tooltip = fpw_befriend_czechs_tt
-	hidden_effect = {
-		add_to_variable = { var = AUS_czechs_loyalty value = 1 }
-		AUS_population_of_the_empire_update_effect = yes
+	ELSE = {
+		add_political_power = -50
+		add_stability = -0.05
 	}
 }
-
-AUS_crush_czechs = {
-	if = {
+AUS_increse_czech_attitude_effect = {
+	IF = {
 		limit = {
-			check_variable = { var = AUS_czechs_loyalty value = -1 compare = equals }
+			has_idea = AUS_czech_hostile
 		}
-		custom_effect_tooltip = fpw_civil_war_czechs_tt
-		hidden_effect = {
-			# civil war
-			every_state = {
-				limit = {
-					AND = {
-						is_owned_by = AUS
-						is_core_of = CZE
-					}
-				}
-				CZE = {
-					transfer_state = PREV	
-				}
-			}
-
-			# no more hungarians, no more debuffs from hungarians
-			set_variable = { var = AUS_czechs_loyalty value = 0 }
-			AUS_population_of_the_empire_update_effect = yes
-			CZE = {
-				declare_war_on = {
-					target = AUS
-					type = independence_wargoal
-				}
-			}	
-		}
-	} else = {
-		custom_effect_tooltip = fpw_crush_czechs_tt
-		hidden_effect = {
-			subtract_from_variable = { var = AUS_czechs_loyalty value = 1 }
-			AUS_population_of_the_empire_update_effect = yes
+		swap_ideas = {
+			remove_idea = AUS_czech_hostile
+			add_idea = AUS_czech_neutral
 		}
 	}
-}
-
-debug_dissolve_austria = {
-	if = {
+	ELSE_IF = {
 		limit = {
-			AUS = {
-				exists = yes
-			}
+			has_idea = AUS_czech_neutral
 		}
-		every_state = {
-			limit = {
-				AND = {
-					is_owned_by = AUS
-					OR = {
-						state = 103
-						state = 163
-					}
-				}
-			}
-			CRO = {
-				transfer_state = PREV	
-			}
+		swap_ideas = {
+			remove_idea = AUS_czech_neutral
+			add_idea = AUS_czech_friendly
 		}
-		every_state = {
-			limit = {
-				AND = {
-					is_owned_by = AUS
-					is_core_of = HUN
-				}
-			}
-			HUN = {
-				transfer_state = PREV	
-			}
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_czech_friendly
 		}
-		every_state = {
-			limit = {
-				AND = {
-					is_owned_by = AUS
-					is_core_of = CZE
-				}
-			}
-			CZE = {
-				transfer_state = PREV	
-			}
+		swap_ideas = {
+			remove_idea = AUS_czech_friendly
+			add_idea = AUS_czech_loyal
 		}
-		every_state = {
-			limit = {
-				AND = {
-					is_owned_by = AUS
-					OR = {
-						state = 88
-						state = 91
-						state = 89
-						state = 80
-					}
-				}
-			}
-			PGA = {
-				transfer_state = PREV	
-			}
+	}
+	ELSE = {
+		add_political_power = 50
+	}
+}
+AUS_decrese_czech_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_czech_loyal
 		}
+		swap_ideas = {
+			remove_idea = AUS_czech_loyal
+			add_idea = AUS_czech_friendly
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_czech_friendly
+		}
+		swap_ideas = {
+			remove_idea = AUS_czech_friendly
+			add_idea = AUS_czech_neutral
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_czech_neutral
+		}
+		swap_ideas = {
+			remove_idea = AUS_czech_neutral
+			add_idea = AUS_czech_hostile
+		}
+	}
+	ELSE = {
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}
+AUS_increse_galician_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_galicia_hostile
+		}
+		swap_ideas = {
+			remove_idea = AUS_galicia_hostile
+			add_idea = AUS_galicia_neutral
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_galicia_neutral
+		}
+		swap_ideas = {
+			remove_idea = AUS_galicia_neutral
+			add_idea = AUS_galicia_friendly
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_galicia_friendly
+		}
+		swap_ideas = {
+			remove_idea = AUS_galicia_friendly
+			add_idea = AUS_galicia_loyal
+		}
+	}
+	ELSE = {
+		add_political_power = 50
+	}
+}
+AUS_decrese_galician_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_galicia_loyal
+		}
+		swap_ideas = {
+			remove_idea = AUS_galicia_loyal
+			add_idea = AUS_galicia_friendly
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_galicia_friendly
+		}
+		swap_ideas = {
+			remove_idea = AUS_galicia_friendly
+			add_idea = AUS_galicia_neutral
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_galicia_neutral
+		}
+		swap_ideas = {
+			remove_idea = AUS_galicia_neutral
+			add_idea = AUS_galicia_hostile
+		}
+	}
+	ELSE = {
+		add_political_power = -50
+		add_stability = -0.05
+	}
+}
+AUS_increse_illyrian_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_illyria_hostile
+		}
+		swap_ideas = {
+			remove_idea = AUS_illyria_hostile
+			add_idea = AUS_illyria_neutral
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_illyria_neutral
+		}
+		swap_ideas = {
+			remove_idea = AUS_illyria_neutral
+			add_idea = AUS_illyria_friendly
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_illyria_friendly
+		}
+		swap_ideas = {
+			remove_idea = AUS_illyria_friendly
+			add_idea = AUS_illyria_loyal
+		}
+	}
+	ELSE = {
+		add_political_power = 50
+	}
+}
+AUS_decrese_illyrian_attitude_effect = {
+	IF = {
+		limit = {
+			has_idea = AUS_illyria_loyal
+		}
+		swap_ideas = {
+			remove_idea = AUS_illyria_loyal
+			add_idea = AUS_illyria_friendly
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_illyria_friendly
+		}
+		swap_ideas = {
+			remove_idea = AUS_illyria_friendly
+			add_idea = AUS_illyria_neutral
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			has_idea = AUS_illyria_neutral
+		}
+		swap_ideas = {
+			remove_idea = AUS_illyria_neutral
+			add_idea = AUS_illyria_hostile
+		}
+	}
+	ELSE = {
+		add_political_power = -50
+		add_stability = -0.05
 	}
 }

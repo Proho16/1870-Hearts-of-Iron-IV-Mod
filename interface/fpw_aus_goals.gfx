@@ -67,4 +67,12 @@ spriteTypes = {
 		name = "GFX_AUS_promise_macedonia"
 		texturefile = "gfx/interface/goals/aus_macedonia_serbia.png"
 	}
+	spriteType = {
+		name = "GFX_AUS_schleswig_holstein"
+		texturefile = "gfx/interface/goals/AUS_schleswig_holstein.png"
+	} 
+	spriteType = {
+		name = "GFX_AUS_ausgleish"
+		texturefile = "gfx/interface/goals/AUS_ausgleish.png"
+	}
 }

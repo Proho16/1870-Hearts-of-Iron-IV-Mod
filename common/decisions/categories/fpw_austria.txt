@@ -1,5 +1,5 @@
 fpw_austria_populations_of_the_empire = {
-	priority = 99
+	priority = 9999
 
 	scripted_gui = aus_populations_of_the_empire_gui
 
@@ -9,7 +9,7 @@ fpw_austria_populations_of_the_empire = {
 
 	visible = {
 		original_tag = AUS
-		has_completed_focus = AUS_a_duel_monarchy_with_dual_problems
+		#has_completed_focus = AUS_a_duel_monarchy_with_dual_problems
 	}
 }
 

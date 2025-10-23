@@ -1,5 +1,7 @@
 ﻿l_english:
-
+ 
+ autonomy_austrian_personal_union: "Habsburg Personal Union"
+ 
 #focuses
  AUS_austria_in_despair: "Austria in Despair"
  AUS_austria_in_despair_desc: ""
@@ -36,16 +38,20 @@
  
  AUS_great_humiliation: "Great Humiliation"
  AUS_great_humiliation_desc: ""
- AUS_prepare_for_whats_coming: "Prepare for What's Coming"
- AUS_prepare_for_whats_coming_desc: ""
  AUS_reform_the_army: "Reform the Army"
  AUS_reform_the_army_desc: ""
+ AUS_military_crackdowns: "Military Crackdowns"
+ AUS_military_crack_downs_desc: ""
+ AUS_prepare_for_whats_coming: "Prepare for What's Coming"
+ AUS_prepare_for_whats_coming_desc: ""
  AUS_trouble_in_hungary: "Trouble in Hungary"
  AUS_trouble_in_hungary_desc: ""
- AUS_push_for_reforms: "Push for Reforms"
- AUS_push_for_reforms_desc: ""
  AUS_slavic_revolts: "Slavic Revolts"
  AUS_slavic_revolts_desc: ""
+ AUS_push_for_reforms: "Push for Reforms"
+ AUS_push_for_reforms_desc: ""
+ AUS_setting_a_new_course: "Setting a New Course"
+ AUS_setting_a_new_course_desc: ""
  AUS_austria_indivisible: "Austria Indivisible"
  AUS_austria_indivisible_desc: ""
  AUS_the_ausgleich: "The Ausgleich of [GetYear]"
@@ -53,19 +59,57 @@
  AUS_multiethnic_empire: "Multiethnic Empire"
  AUS_multiethnic_empire_desc: "Just one more crown will save it!"
  
+ AUS_army_reforms_begin: "Army Reforms Begin"
+ AUS_army_reforms_begin_desc: ""
  
 #decisions
  
 #ideas
+ AUS_hungary_loyal: "Loyal Hungary"
+ AUS_hungary_friendly: "Friendly Hungary"
+ AUS_hungary_neutral: "Neutral Hungary"
+ AUS_hungary_hostile: "Hostile Hungary"
+ AUS_czech_loyal: "Loyal Bohemia"
+ AUS_czech_friendly: "Friendly Bohemia"
+ AUS_czech_neutral: "Neutral Bohemia"
+ AUS_czech_hostile: "Hostile Bohemia"
+ AUS_galicia_loyal: "Loyal Galicia"
+ AUS_galicia_friendly: "Friendly Galicia"
+ AUS_galicia_neutral: "Neutral Galicia"
+ AUS_galicia_hostile: "Hostile Galicia"
+ AUS_illyria_loyal: "Loyal Illyria"
+ AUS_illyria_friendly: "Friendly Illyria"
+ AUS_illyria_neutral: "Neutral Illyria"
+ AUS_illyria_hostile: "Hostile Illyria"
+ 
  
 #events
  fpw_austria.5.t: "Hungarian Protests"
  fpw_austria.5.d: ""
  fpw_austria.5.a: "Is it 1848 all over again?"
+ fpw_austria.6.t: "The Slavs Revolt"
+ fpw_austria.6.d: ""
+ fpw_austria.6.a: "It is 1848 all over again."
  
 #traits 
  
 #custom cost texts 
+ AUS_hungary_loyal_triger_tt: "§YHungarian§! attitude is at least: §GLoyal§!"
+ AUS_czech_loyal_triger_tt: "§YBohemian§! attitude is at least: §GLoyal§!"
+ AUS_galicia_loyal_triger_tt: "§YGalician§! attitude is at least: §GLoyal§!"
+ AUS_illyria_loyal_triger_tt: "§YIllyrian§! attitude is at least: §GLoyal§!"
+ AUS_hungary_friendly_triger_tt: "§YHungarian§! attitude is at least: §7Friendly§"
+ AUS_czech_friendly_triger_tt: "§YBohemian§! attitude is at least: §7Friendly§"
+ AUS_galicia_friendly_triger_tt: "§YGalician§! attitude is at least: §7Friendly§"
+ AUS_illyria_friendly_triger_tt: "§YIllyrian§! attitude is at least: §7Friendly§"
+ AUS_hungary_neutral_triger_tt: "§YHungarian§! attitude is at least: §gNeutral§!"
+ AUS_czech_neutral_triger_tt: "§YBohemian§! attitude is at least: §gNeutral§!"
+ AUS_galicia_neutral_triger_tt: "§YGalician§! attitude is at least: §gNeutral§!"
+ AUS_illyria_neutral_triger_tt: "§YIllyrian§! attitude is at least: §gNeutral§!"
+ AUS_hungary_hostile_triger_tt: "§YHungarian§! attitude is at least: §RHostile§!"
+ AUS_czech_hostile_triger_tt: "§YBohemian§! attitude is at least: §RHostile§!"
+ AUS_galicia_hostile_triger_tt: "§YGalician§! attitude is at least: §RHostile§!"
+ AUS_illyria_hostile_triger_tt: "§YIllyrian§! attitude is at least: §RHostile§!"
  
 #custom effect tooltips
  hungarian_protests_effect: "Every §YHungarian§! state stops being a core of §YAustria§! \n Start §RResistance§!: 60.0% \n Start §CCompliance§!: 20.0%"
@@ -74,6 +118,18 @@
 #custom modifier tooltips
  
 #scripted gui text
+ AUS_attitude_loyal: "§GLoyal§!"
+ AUS_attitude_friendly: "§7Friendly§!"
+ AUS_attitude_neutral: "§gNeutral§!"
+ AUS_attitude_hostile: "§RHostile§!"
+ 
+ AUS_hungarians_name_text: "Hungarians"
+ 
+ AUS_czech_name_text: "Czechs"
+ 
+ AUS_galician_name_text: "Galicians"
+ 
+ AUS_illyrian_name_text: "Illyrians"
  
 #leaders
  

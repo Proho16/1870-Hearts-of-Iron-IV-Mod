@@ -1,0 +1,30 @@
+fpw_austria_populations_of_the_empire = {
+
+	AUS_hungary = {
+		icon = GFX_decision_generic_political_rally
+		allowed = { 
+			original_tag = AUS
+		}
+		available = {
+			
+		} 
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 10
+		#days_remove = 50
+		ai_will_do = {
+			factor = 1
+		} 
+		visible = { 
+			
+		}
+		complete_effect = {
+			add_ideas = 
+		}
+	#	remove_effect = {
+	#		remove_ideas = 
+	#	}
+		
+	}
+	
+}

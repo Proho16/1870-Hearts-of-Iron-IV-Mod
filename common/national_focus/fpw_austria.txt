@@ -190,6 +190,7 @@
 
 	focus = {
 		id = AUS_holstein_crisis
+		icon = GFX_AUS_schleswig_holstein
 		x = 0
 		y = 3
 		relative_position_id = AUS_austria_in_despair
@@ -506,7 +507,7 @@
 	focus = {
 		id = AUS_great_humiliation
 		icon = GFX_focus_CZE_german_puppet
-		x = 8
+		x = 10
 		y = 0
 		relative_position_id = AUS_austria_in_despair
 		#prerequisite = { focus = AUS_peace_of_vienna }
@@ -519,28 +520,14 @@
 			add_war_support = -0.20
 		}
 	}
-	focus = {
-		id = AUS_prepare_for_whats_coming
-		icon = GFX_goal_generic_dangerous_deal
-		x = -1
-		y = 1
-		relative_position_id = AUS_great_humiliation
-		prerequisite = { focus = AUS_great_humiliation }
-		cost = 5
-		available = {
-			
-		}
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
+	
 	focus = {
 		id = AUS_reform_the_army
 		icon = GFX_focus_generic_army_doctrines_2
-		x = 0
-		y = 1
-		relative_position_id = AUS_prepare_for_whats_coming
-		prerequisite = { focus = AUS_prepare_for_whats_coming }
+		x = -2
+		y = 2
+		relative_position_id = AUS_great_humiliation
+		prerequisite = { focus = AUS_great_humiliation }
 		cost = 5
 		available = {
 			
@@ -555,8 +542,25 @@
 		}
 	}
 	focus = {
-		id = AUS_trouble_in_hungary
-		icon = GFX_focus_HUN_a_revolutionary_greater_hungary
+		id = AUS_military_crackdowns
+		icon = GFX_focus_generic_army_doctrines_2
+		x = 0
+		y = 1
+		relative_position_id = AUS_reform_the_army
+		prerequisite = { focus = AUS_reform_the_army }
+		cost = 5
+		available = {
+			
+		}
+		completion_reward = {
+			army_experience = 10
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = AUS_prepare_for_whats_coming
+		icon = GFX_goal_generic_dangerous_deal
 		x = 2
 		y = 1
 		relative_position_id = AUS_great_humiliation
@@ -566,16 +570,16 @@
 			
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 	focus = {
-		id = AUS_push_for_reforms
-		icon = GFX_goal_generic_forceful_treaty
+		id = AUS_trouble_in_hungary
+		icon = GFX_focus_HUN_a_revolutionary_greater_hungary
 		x = -1
 		y = 1
-		relative_position_id = AUS_trouble_in_hungary
-		prerequisite = { focus = AUS_trouble_in_hungary focus = AUS_prepare_for_whats_coming }
+		relative_position_id = AUS_prepare_for_whats_coming
+		prerequisite = { focus = AUS_prepare_for_whats_coming }
 		cost = 5
 		available = {
 			
@@ -589,14 +593,47 @@
 		icon = GFX_focus_generic_spur_communist_revolutions
 		x = 1
 		y = 1
-		relative_position_id = AUS_trouble_in_hungary
-		prerequisite = { focus = AUS_trouble_in_hungary }
+		relative_position_id = AUS_prepare_for_whats_coming
+		prerequisite = { focus = AUS_prepare_for_whats_coming }
 		cost = 5
 		available = {
 			
 		}
 		completion_reward = {
 			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = AUS_push_for_reforms
+		icon = GFX_goal_generic_forceful_treaty
+		x = 1
+		y = 1
+		relative_position_id = AUS_trouble_in_hungary
+		prerequisite = { focus = AUS_trouble_in_hungary focus = AUS_slavic_revolts }
+		cost = 5
+		available = {
+			
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = AUS_setting_a_new_course
+		icon = GFX_focus_generic_support_the_left_right
+		x = -1
+		y = 2
+		relative_position_id = AUS_push_for_reforms
+		prerequisite = { focus = AUS_military_crackdowns }
+		prerequisite = { focus = AUS_push_for_reforms }
+		cost = 5
+		available = {
+			
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.10
 		}
 	}
 	
@@ -606,14 +643,28 @@
 		icon = GFX_focus_AUS_proclaim_austrian_empire
 		x = -4
 		y = 2
-		relative_position_id = AUS_push_for_reforms
-		prerequisite = { focus = AUS_reform_the_army }
-		prerequisite = { focus = AUS_push_for_reforms }
+		relative_position_id = AUS_setting_a_new_course
+		prerequisite = { focus = AUS_setting_a_new_course }
 		mutually_exclusive = { focus = AUS_the_ausgleich }
 		mutually_exclusive = { focus = AUS_multiethnic_empire }
 		cost = 10
-		available = {
-			
+		available = { 
+			custom_trigger_tooltip = {
+				tooltip = AUS_hungary_loyal_triger_tt
+				has_idea = AUS_hungary_loyal
+			}
+			custom_trigger_tooltip = {
+				tooltip = AUS_czech_loyal_triger_tt
+				has_idea = AUS_czech_loyal
+			}
+			custom_trigger_tooltip = {
+				tooltip = AUS_galicia_loyal_triger_tt
+				has_idea = AUS_galicia_loyal
+			}
+			custom_trigger_tooltip = {
+				tooltip = AUS_illyria_loyal_triger_tt
+				has_idea = AUS_illyria_loyal
+			}
 		}
 		completion_reward = {
 			add_political_power = 100
@@ -622,24 +673,26 @@
 	}
 	focus = {
 		id = AUS_the_ausgleich
-		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
-		x = -1
+		icon = GFX_AUS_ausgleish #GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+		x = 0
 		y = 2
-		relative_position_id = AUS_push_for_reforms
-		prerequisite = { focus = AUS_reform_the_army }
-		prerequisite = { focus = AUS_push_for_reforms }
+		relative_position_id = AUS_setting_a_new_course
+		prerequisite = { focus = AUS_setting_a_new_course }
 		mutually_exclusive = { focus = AUS_austria_indivisible }
 		mutually_exclusive = { focus = AUS_multiethnic_empire }
 		cost = 10
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = AUS_hungary_loyal_triger_tt
+				has_idea = AUS_hungary_loyal
+			}
 		}
 		completion_reward = {
 			add_political_power = -100
 			add_stability = 0.10
 			release_autonomy = {
 				target = HUN
-				autonomy_state = autonomy_personal_union
+				autonomy_state = autonomy_austrian_personal_union
 				freedom_level = 0.5
 			}
 		}
@@ -647,40 +700,111 @@
 	focus = {
 		id = AUS_multiethnic_empire
 		icon = GFX_focus_generic_workers
-		x = 2
+		x = 4
 		y = 2
-		relative_position_id = AUS_push_for_reforms
-		prerequisite = { focus = AUS_reform_the_army }
-		prerequisite = { focus = AUS_push_for_reforms }
+		relative_position_id = AUS_setting_a_new_course
+		prerequisite = { focus = AUS_setting_a_new_course }
 		mutually_exclusive = { focus = AUS_austria_indivisible }
 		mutually_exclusive = { focus = AUS_the_ausgleich }
 		cost = 10
 		available = {
-			
+			custom_trigger_tooltip = {
+				tooltip = AUS_hungary_neutral_triger_tt
+				OR = {
+					has_idea = AUS_hungary_loyal
+					has_idea = AUS_hungary_friendly
+					has_idea = AUS_hungary_neutral
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = AUS_czech_neutral_triger_tt
+				OR = {
+					has_idea = AUS_czech_loyal
+					has_idea = AUS_czech_friendly
+					has_idea = AUS_czech_neutral
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = AUS_galicia_neutral_triger_tt
+				OR = {
+					has_idea = AUS_galicia_loyal
+					has_idea = AUS_galicia_friendly
+					has_idea = AUS_galicia_neutral
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = AUS_illyria_neutral_triger_tt
+				OR = {
+					has_idea = AUS_illyria_loyal
+					has_idea = AUS_illyria_friendly
+					has_idea = AUS_illyria_neutral
+				}
+			}
 		}
 		completion_reward = {
 			add_political_power = -100
 			add_stability = -0.10
 			release_autonomy = {
-				target = CRO
-				autonomy_state = autonomy_personal_union
-				freedom_level = 0.5
-			}
-			release_autonomy = {
 				target = HUN
-				autonomy_state = autonomy_personal_union
+				autonomy_state = autonomy_austrian_personal_union
 				freedom_level = 0.5
 			}
 			release_autonomy = {
 				target = CZE
-				autonomy_state = autonomy_personal_union
+				autonomy_state = autonomy_austrian_personal_union
 				freedom_level = 0.5
+			} 
+			effect_tooltip = {
+				release_autonomy = {
+					target = PGA
+					autonomy_state = autonomy_austrian_personal_union
+					freedom_level = 0.5
+				}
+				release_autonomy = {
+					target = CRO
+					autonomy_state = autonomy_austrian_personal_union
+					freedom_level = 0.5
+				}
 			}
-			release_autonomy = {
-				target = POL
-				autonomy_state = autonomy_personal_union
-				freedom_level = 0.5
+			hidden_effect = {
+				80 = { add_core_of = PGA transfer_state_to = PGA }
+				88 = { add_core_of = PGA transfer_state_to = PGA }
+				89 = { add_core_of = PGA transfer_state_to = PGA }
+				91 = { add_core_of = PGA transfer_state_to = PGA }
+				set_autonomy = {
+					target = PGA
+					autonomous_state = autonomy_austrian_personal_union
+				}
+				103 = { transfer_state_to = CRO }
+				109 = { transfer_state_to = CRO }
+				163 = { transfer_state_to = CRO }
+				982 = { transfer_state_to = CRO }
+				set_autonomy = {
+					target = CRO
+					autonomous_state = autonomy_austrian_personal_union
+				}
 			}
+			
+		}
+	}
+	
+	# Army Branch
+	focus = {
+		id = AUS_army_reforms_begin
+		icon = GFX_focus_generic_advanced_military_studies
+		x = 8
+		y = 0
+		relative_position_id = AUS_great_humiliation
+		#prerequisite = { focus = AUS_peace_of_vienna }
+		cost = 10
+		available = {
+			OR = {
+				has_completed_focus = AUS_peace_of_prague
+				has_completed_focus = AUS_reform_the_army
+			}
+		}
+		completion_reward = {
+			army_experience = 25
 		}
 	}
 	

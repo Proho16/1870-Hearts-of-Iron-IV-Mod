@@ -37,5 +37,5 @@ tags={
 	"Gameplay"
 }
 name="La Belle Epoque"
-supported_version="1.16.9"
+supported_version="1.16.*"
 remote_file_id="3268912955"

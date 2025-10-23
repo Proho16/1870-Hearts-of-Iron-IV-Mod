@@ -23,9 +23,9 @@
  FPC_DEF:0 "the Paris Commune"
  FPC_ADJ:0 "Communard"
 
- PGA:1 "Poland-Galicia"
- PGA_DEF:1 "the Polish-Galician State"
- PGA_ADJ:0 "Polish-Galician"
+ PGA:1 "Galicia"
+ PGA_DEF:1 "the Galician State"
+ PGA_ADJ:0 "Galician"
 
  NRW:1 "Confederation of the Rhine"
  NRW_DEF:1 "the Confederation of the Rhine"
@@ -273,3 +273,19 @@
  BRM:0 "Burma"
  BRM_DEF:0 "Burma"
  BRM_ADJ:0 "Burmese"
+ 
+ HUN_subject: "$HUN$"
+ HUN_subject_DEF: "$HUN$"
+ HUN_AUS_autonomy_austrian_personal_union: "Kingdom of Hungary"
+ HUN_AUS_autonomy_austrian_personal_union_DEF: "the Kingdom of Hungary"
+ 
+ CZE_AUS_autonomy_austrian_personal_union: "Kingdom of Bohemia"
+ CZE_AUS_autonomy_austrian_personal_union_DEF: "the Kingdom of Bohemia"
+ 
+ PGA_AUS_autonomy_austrian_personal_union: "Kingdom of Galicia"
+ PGA_AUS_autonomy_austrian_personal_union_DEF: "the Kingdom of Galicia"
+ 
+ CRO_AUS_autonomy_austrian_personal_union: "Kingdom of Illyria"
+ CRO_AUS_autonomy_austrian_personal_union_DEF: "the Kingdom of Illyria"
+ 
+ 
