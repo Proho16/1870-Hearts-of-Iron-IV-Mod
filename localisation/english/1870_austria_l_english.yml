@@ -54,8 +54,14 @@
  AUS_setting_a_new_course_desc: ""
  AUS_austria_indivisible: "Austria Indivisible"
  AUS_austria_indivisible_desc: ""
+ AUS_reintegrate_bohemia: "Reintegrate Bohemia"
+ AUS_reintegrate_bohemia_desc: ""
  AUS_the_ausgleich: "The Ausgleich of [GetYear]"
  AUS_the_ausgleich_desc: ""
+ AUS_uneasy_compromise: "Uneasy Compromise"
+ AUS_uneasy_compromise_desc: ""
+ AUS_crown_of_hungary: "Crown of Hungary"
+ AUS_crown_of_hungary_desc: ""
  AUS_multiethnic_empire: "Multiethnic Empire"
  AUS_multiethnic_empire_desc: "Just one more crown will save it!"
  
@@ -63,6 +69,10 @@
  AUS_army_reforms_begin_desc: ""
  
 #decisions
+ #pops of empire
+ AUS_populations_of_the_empire: "Population of the Empire"
+ AUS_gain_hungarian_trust: "Gain Hungarian Trust"
+ AUS_improve_hungarian_relations: "Improve Hungarian Relations"
  
 #ideas
  AUS_hungary_loyal: "Loyal Hungary"
@@ -110,26 +120,58 @@
  AUS_czech_hostile_triger_tt: "§YBohemian§! attitude is at least: §RHostile§!"
  AUS_galicia_hostile_triger_tt: "§YGalician§! attitude is at least: §RHostile§!"
  AUS_illyria_hostile_triger_tt: "§YIllyrian§! attitude is at least: §RHostile§!"
+ AUS_need_5_trust: "At least 5 trust with them."
  
 #custom effect tooltips
- hungarian_protests_effect: "Every §YHungarian§! state stops being a core of §YAustria§! \n Start §RResistance§!: 60.0% \n Start §CCompliance§!: 20.0%"
- slavic_revolts_effect: "Every §YSlavic§! state stops being a core of §YAustria§! \n Start §RResistance§! \n Start §CCompliance§!"
+ hungarian_protests_effect: "Set the §YHungarian§! attitude to §RHostile§! \nEvery §YHungarian§! state stops being a core of §YAustria§! \n Start §RResistance§!: 60.0% \n Start §CCompliance§!: 20.0% \n"
+ slavic_revolts_effect: "Set the §YBohemian§! attitude to §RHostile§! \nSet the §YGalician§! attitude to §RHostile§! \nSet the §YIllyrian§! attitude to §RHostile§! \nEvery §YSlavic§! state stops being a core of §YAustria§! \n Start §RResistance§! \n Start §CCompliance§!"
+ AUS_increse_hungraian_attitude_effect_tt: "This will §Gincrese§! the §YHungarian§! attitude."
+ AUS_decrese_hungraian_attitude_effect_tt: "This will §Rdecrese§! the §YHungarian§! attitude."
+ AUS_increse_czech_attitude_effect_tt: "This will §Gincrese§! the §YBohemian§! attitude."
+ AUS_decrese_czech_attitude_effect_tt: "This will §Rdecrese§! the §YBohemian§! attitude."
+ AUS_increse_galician_attitude_effect_tt: "This will §Gincrese§! the §YGalician§! attitude."
+ AUS_decrese_galician_attitude_effect_tt: "This will §Rdecrese§! the §YGalician§! attitude."
+ AUS_increse_illyrian_attitude_effect_tt: "This will §Gincrese§! the §YIllyrian§! attitude."
+ AUS_decrese_illyrian_attitude_effect_tt: "This will §Rdecrese§! the §YIllyrian§! attitude."
  
 #custom modifier tooltips
  
 #scripted gui text
+ AUS_ATTITUDE_TOOLTIP: "§YAttitude§! represents the region's desire to cooperate with the government. \n§GLoyal§! and §7Friendly§! regions will grant different bonuses. \n§gNeutral§! regions will grant minor debuffs and §RHostile§! ones will give major penalties."
+ AUS_TRUST: "Trust"
  AUS_attitude_loyal: "§GLoyal§!"
  AUS_attitude_friendly: "§7Friendly§!"
  AUS_attitude_neutral: "§gNeutral§!"
  AUS_attitude_hostile: "§RHostile§!"
  
  AUS_hungarians_name_text: "Hungarians"
+ AUS_hungarian_attitude_tt: "[AUS_hungarian_attitude_tt]"
+ AUS_hungary_attitude_loyal_tt: "§YLoyal Hungary§! \nPolitical Power Gain: §G+15%§! \nStability: §G+15.00%§! \nWar Support: §G+15.00%§!"
+ AUS_hungary_attitude_friendly_tt: "§YFriendly Hungary§! \nPolitical Power Gain: §G+5%§! \nStability: §G+5.00%§! \nWar Support: §G+5.00%§!"
+ AUS_hungary_attitude_neutral_tt: "§YNeutral Hungary§! \nPolitical Power Gain: §R-5%§! \nStability: §R-5.00%§! \nWar Support: §R-5.00%§!"
+ AUS_hungary_attitude_hostile_tt: "§YHostile Hungary§! \nPolitical Power Gain: §R-15%§! \nStability: §R-15.00%§! \nWar Support: §R-15.00%§!"
  
  AUS_czech_name_text: "Czechs"
+ AUS_czech_attitude_tt: "[AUS_czech_attitude_tt]"
+ AUS_czech_attitude_loyal_tt: "§YLoyal Bohemia§! \nConsumer Goods Factories Factor: §Y-20.0%§! \nFactory Output: §G+10.00%§! \nDockyard Output: §G+10.00%§!"
+ AUS_czech_attitude_friendly_tt: "§YFriendly Bohemia§! \nConsumer Goods Factories Factor: §Y-10.0%§! \nFactory Output: §G+5.00%§! \nDockyard Output: §G+5.00%§!"
+ AUS_czech_attitude_neutral_tt: "§YNeutral Bohemia§! \nConsumer Goods Factories Factor: §Y10.0%§! \nFactory Output: §R-5.00%§! \nDockyard Output: §R-5.00%§!"
+ AUS_czech_attitude_hostile_tt: "§YHostile Bohemia§! \nConsumer Goods Factories Factor: §Y20.0%§! \nFactory Output: §R-10.00%§! \nDockyard Output: §R-10.00%§!"
  
  AUS_galician_name_text: "Galicians"
+ AUS_galician_attitude_tt: "[AUS_galician_attitude_tt]"
+ AUS_galicia_attitude_loyal_tt: "§YLoyal Galicia§! \nConsumer Goods Factories Factor: §Y-10.0%§! \nStability: §G+10.00%§! \nConstruction Speed: §G+15.00%§!"
+ AUS_galicia_attitude_friendly_tt: "§YFriendly Galicia§! \nConsumer Goods Factories Factor: §Y5.0%§! \nStability: §G+5.00%§! \nConstruction Speed: §G+5.00%§!"
+ AUS_galicia_attitude_neutral_tt: "§YNeutral Galicia§! \nConsumer Goods Factories Factor: §Y10.0%§! \nStability: §R-5.00%§! \nConstruction Speed: §R-10.00%§!"
+ AUS_galicia_attitude_hostile_tt: "§YHostile Galicia§! \nConsumer Goods Factories Factor: §Y20.0%§! \nStability: §R-10.00%§! \nConstruction Speed: §R-20.00%§!"
  
  AUS_illyrian_name_text: "Illyrians"
+ AUS_illyrian_attitude_tt: "[AUS_illyrian_attitude_tt]"
+ AUS_illyria_attitude_loyal_tt: "§YLoyal Illyria§! \nWar Support: §G+10.00%§! \nResistance Target: §G-20%§! \nCompliance Growth Speed: §G+10%§!"
+ AUS_illyria_attitude_friendly_tt: "§YFriendly Illyria§! \nWar Support: §G+5.00%§! \nResistance Target: §G-10%§! \nCompliance Growth Speed: §G+10%§!"
+ AUS_illyria_attitude_neutral_tt: "§YNeutral Illyria§! \nWar Support: §R-5.00%§! \nResistance Target: §R+20%§! \nCompliance Growth Speed: §R-10%§!"
+ AUS_illyria_attitude_hostile_tt: "§YHostile Illyria§! \nWar Support: §R-10.00%§! \nResistance Target: §R+40%§! \nCompliance Growth Speed: §R-20%§!"
+ 
  
 #leaders
  

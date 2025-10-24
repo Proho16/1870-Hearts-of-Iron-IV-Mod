@@ -107,6 +107,13 @@ country_event = {
 				id = fpw_austria.6
 				days = 30
 			}
+			remove_ideas = {
+				AUS_hungary_hostile
+				AUS_hungary_neutral
+				AUS_hungary_friendly
+				AUS_hungary_loyal
+			}
+			add_ideas = AUS_hungary_hostile
 		}
 		custom_effect_tooltip = hungarian_protests_effect
 	}
@@ -147,6 +154,25 @@ country_event = {
 				}
 				set_resistance = 70
 				set_compliance = 15
+			}
+			remove_ideas = {
+				AUS_czech_hostile
+				AUS_czech_neutral
+				AUS_czech_friendly
+				AUS_czech_loyal
+				AUS_galicia_hostile
+				AUS_galicia_neutral
+				AUS_galicia_friendly
+				AUS_galicia_loyal
+				AUS_illyria_hostile
+				AUS_illyria_neutral
+				AUS_illyria_friendly
+				AUS_illyria_loyal
+			}
+			add_ideas = {
+				AUS_czech_hostile
+				AUS_galicia_hostile
+				AUS_illyria_hostile
 			}
 		}
 		custom_effect_tooltip = slavic_revolts_effect
