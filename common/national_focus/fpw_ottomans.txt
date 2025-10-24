@@ -80,7 +80,7 @@ focus_tree = {
 
 		#search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		x = 2
+		x = 4
 		y = 1
 
 		cost = 5
@@ -132,12 +132,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = TUR_deport_greeks
+		id = TUR_continue_turkish_dominance
 		icon = GFX_goal_unknown
 
 		#search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		x = 0
+		x = 2
 		y = 1
 
 		cost = 5
@@ -171,7 +171,7 @@ focus_tree = {
 
 		#search_filters = { FOCUS_FILTER_HISTORICAL }
 
-		x = 0
+		x = -2
 		y = 1
 
 		cost = 5
@@ -182,17 +182,289 @@ focus_tree = {
 		available = {
 		}
 		available_if_capitulated = yes
-		relative_position_id = TUR_deport_greeks
+		relative_position_id = TUR_continue_turkish_dominance
 		prerequisite = {
-			focus = TUR_deport_greeks
+			focus = TUR_continue_turkish_dominance
 		}
 		prerequisite = {
 			focus = TUR_ready_for_disaster
 		}
-		prerequisite = {
-			focus = TUR_our_response
-		}
 
+		completion_reward = {
+			add_timed_idea = {
+				idea = fpw_TUR_reformed_civilian_projects
+				days = 360
+			}
+		}
+	}
+	focus = {
+		id = TUR_enforce_lenient_penal_code
+		icon = GFX_focus_AFG_a_modern_economy
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = -3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_reform_civillian_projects
+		prerequisite = {
+			focus = TUR_reform_civillian_projects
+		}
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = fpw_TUR_enforced_penal_law
+				days = 360
+			}
+		}
+	}
+	focus = {
+		id = TUR_establish_naval_minstry
+		icon = GFX_goal_generic_navy_battleship
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_reform_civillian_projects
+		prerequisite = {
+			focus = TUR_reform_civillian_projects
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fpw_TUR_over_sized_navy
+				add_idea = fpw_TUR_over_sized_navy_two
+			}
+		}
+	}
+	focus = {
+		id = TUR_enact_nationality_law
+		icon = GFX_goal_generic_national_unity
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_idea = fpw_TUR_admin_reform }
+			has_political_power > 50
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_establish_naval_minstry
+		prerequisite = {
+			focus = TUR_establish_naval_minstry
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			swap_ideas = {
+				remove_idea = fpw_TUR_multi_ethnic_state
+				add_idea = fpw_TUR_multi_ethnic_state_two
+			}
+			add_timed_idea = {
+				idea = fpw_TUR_admin_reform
+				days = 182
+			}
+		}
+	}
+	focus = {
+		id = TUR_establish_the_gendarmerie
+		icon = GFX_focus_generic_little_entente
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_idea = fpw_TUR_admin_reform }
+			has_political_power > 50
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_establish_naval_minstry
+		prerequisite = {
+			focus = TUR_establish_naval_minstry
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			swap_ideas = {
+				remove_idea = fpw_TUR_on_going_reform
+				add_idea = fpw_TUR_on_going_reform_two
+			}
+			add_timed_idea = {
+				idea = fpw_TUR_admin_reform
+				days = 182
+			}
+		}
+	}
+	focus = {
+		id = TUR_regulate_foreigners
+		icon = GFX_focus_PER_limit_foreign_influence
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_idea = fpw_TUR_admin_reform }
+			has_political_power > 50
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_enforce_lenient_penal_code
+		prerequisite = {
+			focus = TUR_enforce_lenient_penal_code
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			add_ideas = fpw_TUR_regulated_foreigner_land_ownership
+			add_timed_idea = {
+				idea = fpw_TUR_admin_reform
+				days = 182
+			}
+		}
+	}
+	focus = {
+		id = TUR_reform_court_systems
+		icon = GFX_focus_SOV_penal_battalions
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_idea = fpw_TUR_admin_reform }
+			has_political_power > 50
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_enforce_lenient_penal_code
+		prerequisite = {
+			focus = TUR_enforce_lenient_penal_code
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = fpw_TUR_admin_reform
+				days = 182
+			}
+		}
+	}
+	focus = {
+		id = TUR_create_a_constitution
+		icon = GFX_focus_generic_treaty
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 2
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = TUR_no_restraints_on_the_sultan
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_enforce_lenient_penal_code
+		prerequisite = {
+			focus = TUR_reform_court_systems
+		}
+		prerequisite = {
+			focus = TUR_regulate_foreigners
+		}
+		prerequisite = {
+			focus = TUR_establish_the_gendarmerie
+		}
+		prerequisite = {
+			focus = TUR_enact_nationality_law
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = TUR_no_restraints_on_the_sultan
+		icon = GFX_focus_generic_monarchy_1
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 4
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = TUR_create_a_constitution
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_enforce_lenient_penal_code
+		prerequisite = {
+			focus = TUR_reform_court_systems
+		}
+		prerequisite = {
+			focus = TUR_regulate_foreigners
+		}
+		prerequisite = {
+			focus = TUR_establish_the_gendarmerie
+		}
+		prerequisite = {
+			focus = TUR_enact_nationality_law
+		}
+		
 		completion_reward = {
 			
 		}
