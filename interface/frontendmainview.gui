@@ -204,17 +204,23 @@ guiTypes = {
 			spriteType = "GFX_missing_dlc_warning_sign"
 		}
 
-		# instantTextBoxType = {
-		# 	name ="fpw_version_label"
-		# 	position = { x = 35 y = 349 }
-		# 	textureFile = ""
-		# 	font = "hoi_18b"
-		# 	borderSize = {x = 0 y = 0}
-		# 	text = "fpw_version_nondebug"	
-		# 	format = centre
-		# 	maxWidth = 250
-		# 	maxHeight = 20	
-		# }
+		instantTextBoxType = {
+
+			name ="version_label"
+			position = { x = 35 y = 411 }
+			textureFile = ""
+			font = "hoi_18b"
+			borderSize = {x = 0 y = 0}
+			text = "ALPHA"	
+			format = centre
+			maxWidth = 250
+			maxHeight = 20	
+		}
+
+		positionType = {
+			name = "version_label_subscription_position"
+			position = { x = 35 y = 539 }
+		}
 
 		ButtonType = {
 			name = "settings_button"

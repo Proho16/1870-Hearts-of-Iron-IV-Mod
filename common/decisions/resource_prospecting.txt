@@ -41,19 +41,6 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -121,19 +108,6 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -210,19 +184,6 @@ prospect_for_resources = {
 					original_tag = JAP
 				}
 			}
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -291,19 +252,6 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -371,19 +319,6 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -451,19 +386,6 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -531,19 +453,6 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -613,19 +522,6 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -695,19 +591,6 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -783,19 +666,7 @@ prospect_for_resources = {
 				tag = ENG
 				has_war = no
 			}
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -864,19 +735,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -946,19 +805,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -1034,19 +881,7 @@ prospect_for_resources = {
 				factor = 20 #10 was the default weight before, meant for ITA.
 				original_tag = ITA
 			}
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -1125,19 +960,7 @@ prospect_for_resources = {
 				factor = 20 #10 was the default weight before, meant for ITA.
 				original_tag = ITA
 			}
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -1209,19 +1032,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -1293,19 +1104,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -1381,19 +1180,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -1465,19 +1252,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -1552,19 +1327,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -1643,10 +1406,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -1729,19 +1489,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -1818,19 +1566,7 @@ prospect_for_resources = {
 				factor = 20 #10 was the default weight before
 				original_tag = GER
 			}
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -1908,19 +1644,7 @@ prospect_for_resources = {
 				factor = 20 #10 was the default weight before
 				original_tag = GER
 			}
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -2000,19 +1724,7 @@ prospect_for_resources = {
 					original_tag = HOL
 				}
 			}
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -2089,19 +1801,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -2179,10 +1879,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -2265,19 +1962,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -2350,19 +2035,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -2473,10 +2146,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -2550,10 +2220,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -2659,10 +2326,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -2768,10 +2432,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -2877,10 +2538,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -2986,10 +2644,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -3095,10 +2750,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -3204,10 +2856,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -3314,10 +2963,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -3423,10 +3069,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -3519,19 +3162,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -3596,19 +3227,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -3685,10 +3304,7 @@ prospect_for_resources = {
 			modifier = {
 				factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -3769,19 +3385,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -3848,10 +3452,7 @@ prospect_for_resources = {
 			modifier = {
 			factor = 0
 				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
+					
 					AND = { #Too low MP we need to save PP for the laws
 						has_manpower < 10000
 						NOT = { has_idea = scraping_the_barrel }
@@ -3921,19 +3522,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -3999,19 +3588,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -4084,19 +3663,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -4170,19 +3739,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -4256,19 +3815,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -4346,19 +3895,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -4449,19 +3988,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -4535,19 +4064,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -4621,19 +4140,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -4739,19 +4248,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -4857,19 +4356,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -4971,19 +4460,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -5089,19 +4568,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -5207,19 +4676,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -5272,7 +4731,7 @@ prospect_for_resources = {
 				limit = {
 					check_variable = { var = SOV_Belgorod_steel_duration_3 value = 30 compare = less_than }
 				}
-				set_variable = { var = SOV_Belgorod_steel_duration_3 value = 30 }
+				set_variable = { var = common/decisions/aat_mio_decisions value = 30 }
 			}
 		}
 	}
@@ -5330,19 +4789,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -5404,19 +4851,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -5518,19 +4953,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -5604,19 +5029,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -5717,19 +5130,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -5805,19 +5208,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -5893,19 +5286,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -5980,19 +5363,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -6066,19 +5439,7 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
+			
 			modifier = {  # Too low PP
 				factor = 0.5
 					has_political_power < 80
@@ -6179,19 +5540,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -6267,19 +5618,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -6355,19 +5696,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -6444,19 +5775,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -6534,19 +5855,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -6629,19 +5940,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 			}
 			modifier = {  # Too low PP
 				factor = 0.5
@@ -6723,18 +6024,9 @@ prospect_for_resources = {
 			base = 0.3
 			modifier = {
 				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						OR = {
-							SOV_save_pp_for_manpower_trouble = yes
-							SOV_we_want_to_send_ultimatums = yes
-						}
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
+					#Too low MP we need to save PP for the laws
+					has_manpower < 10000
+					NOT = { has_idea = scraping_the_barrel }
 				}
 			}
 			modifier = {  # Too low PP
@@ -6992,19 +6284,6 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			base = 0.3
-			modifier = {
-				factor = 0
-				OR = {
-					AND = { #Ultimatum decisions are available and we should prio them
-						original_tag = SOV
-						SOV_we_want_to_send_ultimatums = yes
-					}
-					AND = { #Too low MP we need to save PP for the laws
-						has_manpower < 10000
-						NOT = { has_idea = scraping_the_barrel }
-					}
-				}
-			}
 			modifier = {  # Too low PP
 				factor = 0.5
 				has_political_power < 80
