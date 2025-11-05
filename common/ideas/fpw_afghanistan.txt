@@ -5,7 +5,6 @@ ideas = {
 				always = no
 			}
 
-
 			removal_cost = -1
 
 			picture = generic_war_preparation
@@ -18,14 +17,10 @@ ideas = {
 			}
 		}
 
-	}
-
-	country = {
 		fpw_AFG_entirely_war_economy = {
 			allowed = {
 				always = no
 			}
-
 
 			removal_cost = -1
 
@@ -40,9 +35,6 @@ ideas = {
 			}
 		}
 
-	}
-
-		country = {
 		fpw_AFG_AFZ_illiterate_state = {
 			allowed = {
 				always = no
@@ -60,9 +52,6 @@ ideas = {
 			}
 		}
 
-	}
-
-		country = {
 		fpw_AFG_finally_end_the_civilwar = {
 			allowed = {
 				always = no
@@ -78,8 +67,6 @@ ideas = {
 			}
 		}
 
-	}
-		country = {
 		fpw_AFG_careful_planning = {
 			allowed = {
 				always = no
@@ -97,8 +84,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_post_war_economy = {
 			allowed = {
 				always = no
@@ -117,8 +102,7 @@ ideas = {
 				industrial_capacity_factory = -0.3
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_modernizing_economy = {
 			allowed = {
 				always = no
@@ -137,8 +121,7 @@ ideas = {
 				industrial_capacity_factory = -0.2
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_agricultural_economy = {
 			allowed = {
 				always = no
@@ -157,8 +140,7 @@ ideas = {
 				industrial_capacity_factory = -0.3
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_lowered_taxes = {
 			allowed = {
 				always = no
@@ -174,8 +156,7 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_raised_taxes = {
 			allowed = {
 				always = no
@@ -191,8 +172,7 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_welfare_programs = {
 			allowed = {
 				always = no
@@ -210,8 +190,7 @@ ideas = {
 				consumer_goods_factor = 0.1
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_farmers_supported = {
 			allowed = {
 				always = no
@@ -227,8 +206,7 @@ ideas = {
 				consumer_goods_factor = -0.1
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_afghan_banking_systems = {
 			allowed = {
 				always = no
@@ -245,6 +223,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}
+
 		fpw_AFG_western_economic_model = {
 			allowed = {
 				always = no
@@ -260,8 +239,7 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
-	}
-	country = {
+
 		fpw_rights_of_man = {
 			allowed = {
 				always = no
@@ -278,8 +256,7 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}
-	}
-	country = {
+
 		fpw_the_afghan_constitution = {
 			allowed = {
 				always = no
@@ -298,8 +275,7 @@ ideas = {
 				cic_construction_boost = 0.1
 			}
 		}
-	}
-	country = {
+
 		fpw_pax_afghanistan = {
 			allowed = {
 				always = no
@@ -316,8 +292,7 @@ ideas = {
 				army_core_defence_factor = 0.15
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_afghan_national_bank = {
 			allowed = {
 				always = no
@@ -333,8 +308,7 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_economic_reformation_process = {
 			allowed = {
 				always = no
@@ -350,8 +324,7 @@ ideas = {
 				production_speed_buildings_factor = 0.15
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_cheaper_guns = {
 			allowed = {
 				always = no
@@ -369,8 +342,7 @@ ideas = {
 				}
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_extended_use_of_propoganda = {
 			allowed = {
 				always = no
@@ -385,9 +357,7 @@ ideas = {
 				stability_factor = -0.1
 			}
 		}
-	}
 
-	country = {
 		fpw_AFG_supporting_afghanistan = {
 			allowed = {
 				always = no
@@ -401,8 +371,7 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_munitys_in_the_army = {
 			allowed = {
 				always = no
@@ -417,8 +386,7 @@ ideas = {
 				army_defence_factor = -0.75
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_mountain_warfare = {
 			allowed = {
 				always = no
@@ -435,9 +403,7 @@ ideas = {
 				cavalry_attack_factor = 0.05
 			}
 		}
-	}
 
-	country = {
 		fpw_AFG_mordernizing_army = {
 			allowed = {
 				always = no
@@ -455,9 +421,7 @@ ideas = {
 				army_artillery_attack_factor = 0.05
 			}
 		}
-	}
 
-	country = {
 		fpw_AFG_lagging_military_research = {
 			allowed = {
 				always = no
@@ -476,9 +440,7 @@ ideas = {
 				planning_speed = -0.5
 			}
 		}
-	}
 
-	country = {
 		fpw_AFG_new_afghan_army = {
 			allowed = {
 				always = no
@@ -492,9 +454,7 @@ ideas = {
 				experience_gain_army_unit_factor = 0.2
 			}
 		}
-	}
 
-	country = {
 		fpw_AFG_afghan_modern_army = {
 			allowed = {
 				always = no
@@ -510,8 +470,7 @@ ideas = {
 				max_planning_factor = 0.1
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_afghan_modern_army_two = {
 			allowed = {
 				always = no
@@ -530,8 +489,7 @@ ideas = {
 				army_org_factor = 0.05
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_afghan_modern_army_three = {
 			allowed = {
 				always = no
@@ -554,8 +512,7 @@ ideas = {
 				army_defence_factor = 0.05
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_afghan_modern_army_four = {
 			allowed = {
 				always = no
@@ -582,9 +539,7 @@ ideas = {
 				acclimatization_cold_climate_gain_factor = 0.5
 			}
 		}
-	}
 
-	country = {
 		fpw_AFG_moblized_tribes = {
 			allowed = {
 				always = no
@@ -600,9 +555,7 @@ ideas = {
 				
 			}
 		}
-	}
 
-	country = {
 		fpw_AFG_tribal_leaders_allowed_in_highcommand = {
 			allowed = {
 				always = no
@@ -619,8 +572,7 @@ ideas = {
 				max_planning_factor = -0.05
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_increased_calvary_research = {
 			allowed = {
 				always = no
@@ -635,8 +587,7 @@ ideas = {
 				custom_modifier_tooltip = afg_research_plan
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_increased_calvary_research_two = {
 			allowed = {
 				always = no
@@ -653,8 +604,7 @@ ideas = {
 				cavalry_defence_factor = 0.025
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_increased_calvary_research_three = {
 			allowed = {
 				always = no
@@ -672,8 +622,7 @@ ideas = {
 				modifier_army_sub_unit_cavalry_speed_factor = 0.05
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_increased_calvary_research_four = {
 			allowed = {
 				always = no
@@ -693,8 +642,7 @@ ideas = {
 				unit_cavalry_design_cost_factor = -0.5
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_increased_calvary_research_five = {
 			allowed = {
 				always = no
@@ -714,8 +662,7 @@ ideas = {
 				unit_cavalry_design_cost_factor = -0.5
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_increased_calvary_research_six = {
 			allowed = {
 				always = no
@@ -736,8 +683,7 @@ ideas = {
 				breakthrough_factor = 0.05
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_increased_calvary_research_seven = {
 			allowed = {
 				always = no
@@ -758,8 +704,7 @@ ideas = {
 				breakthrough_factor = 0.05
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_increased_calvary_research_eight = {
 			allowed = {
 				always = no
@@ -780,8 +725,7 @@ ideas = {
 				breakthrough_factor = 0.15
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_war_bonds = {
 			allowed = {
 				always = no
@@ -797,8 +741,7 @@ ideas = {
 				consumer_goods_factor = -0.2
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_attack_on_kabul = {
 			allowed = {
 				always = no
@@ -813,8 +756,7 @@ ideas = {
 				attack_bonus_against = 0.15
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_tribal_recruitment_campaign = {
 			allowed = {
 				always = no
@@ -829,8 +771,7 @@ ideas = {
 				mobilization_speed = 0.05
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_barazaki_dynasty = {
 			allowed = {
 				always = no
@@ -845,8 +786,7 @@ ideas = {
 				war_support_factor = 0.1
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_supressing_tribes = {
 			allowed = {
 				always = no
@@ -862,8 +802,7 @@ ideas = {
 				resistance_target = -0.15
 			}
 		}
-	}
-	country = {
+
 		fpw_AFG_unified_country = {
 			allowed = {
 				always = no
@@ -880,8 +819,6 @@ ideas = {
 			}
 		}
 		
-	}
-	country = {
 		fpw_AFG_comprimise_with_tribes = {
 			allowed = {
 				always = no
@@ -900,9 +837,7 @@ ideas = {
 				army_core_defence_factor = 0.025
 			}
 		}
-		
-	}
-	country = {
+
 		fpw_AFG_illiterate_state_two = {
 			allowed = {
 				always = no
@@ -919,8 +854,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_illiterate_state_three = {
 			allowed = {
 				always = no
@@ -937,8 +870,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_bukharian_campaign = {
 			allowed = {
 				always = no
@@ -958,8 +889,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_indian_campaign = {
 			allowed = {
 				always = no
@@ -983,8 +912,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_nationalism = {
 			allowed = {
 				always = no
@@ -1003,8 +930,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_sher_ali_khans_reforms = {
 			allowed = {
 				always = no
@@ -1021,8 +946,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_tribal_justice_system = {
 			allowed = {
 				always = no
@@ -1040,8 +963,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_reorganized_bureaucracy = {
 			allowed = {
 				always = no
@@ -1059,8 +980,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_a_reformed_afghanistan = {
 			allowed = {
 				always = no
@@ -1080,8 +999,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_complete_trust_in_sher_ali_khan = {
 			allowed = {
 				always = no
@@ -1101,8 +1018,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_nationalized_jirga_system = {
 			allowed = {
 				always = no
@@ -1123,8 +1038,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_nationalized_economy = {
 			allowed = {
 				always = no
@@ -1142,8 +1055,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_corrupt_takeover = {
 			allowed = {
 				always = no
@@ -1160,8 +1071,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_nationalism_embraced = {
 			allowed = {
 				always = no
@@ -1182,8 +1091,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_afghan_recruit_ment_system = {
 			allowed = {
 				always = no
@@ -1199,8 +1106,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_raze_the_ground_and_scorcth_the_earth = {
 			allowed = {
 				always = no
@@ -1219,8 +1124,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_the_means_to_wage_war = {
 			allowed = {
 				always = no
@@ -1238,8 +1141,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_tax_breaks_granted = {
 			allowed = {
 				always = no
@@ -1256,8 +1157,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_complete_support = {
 			allowed = {
 				always = no
@@ -1275,8 +1174,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_expanded_factory_rights = {
 			allowed = {
 				always = no
@@ -1293,8 +1190,6 @@ ideas = {
 			}
 		}
 
-	}
-	country = {
 		fpw_AFG_pro_womens_rights = {
 			allowed = {
 				always = no
@@ -1488,10 +1383,5 @@ ideas = {
 				min_export = 0.15
 			}
 		}
-
-
 	}
-	
-
 }
-

@@ -882,27 +882,6 @@
 		}
 	}
 	focus = {
-		id = afg_follow_western_economic_models
-		icon = GFX_focus_RAJ_special_economic_zones
-		
-		x = -1
-		y = 1
-		cost = 5
-		prerequisite = { focus = afg_establish_banking_systems }
-		relative_position_id = afg_establish_banking_systems
-		available = {
-			has_completed_focus = afg_modernization_efforts
-		}
-		
-		completion_reward = {
-			add_ideas = fpw_AFG_western_economic_model
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	}
-	focus = {
 		id = afg_establish_banking_systems
 		icon = GFX_focus_CHL_strengthen_the_central_bank
 		
@@ -918,6 +897,27 @@
 		completion_reward = {
 			add_ideas = fpw_AFG_afghan_banking_systems
 
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}
+	focus = {
+		id = afg_follow_western_economic_models
+		icon = GFX_focus_RAJ_special_economic_zones
+		
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = afg_establish_banking_systems }
+		relative_position_id = afg_establish_banking_systems
+		available = {
+			has_completed_focus = afg_modernization_efforts
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_AFG_western_economic_model
 		}
 		
 		ai_will_do = {
@@ -1910,9 +1910,9 @@
 				play_song = "sultan_qalbam"
 				set_global_flag = super_visible
             	set_global_flag = fpw_aaw
-            	visible = {
-                	has_global_flag = super_visible
-            	}
+            	# visible = {
+                # 	has_global_flag = super_visible
+            	# }
 			}
 			
 			
