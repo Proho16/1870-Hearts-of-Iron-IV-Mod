@@ -615,9 +615,11 @@
 					}
 				}
 			}
-			AST = {
-				all_core_states = {
-					is_owned_by = ENG
+			any_state = {
+				is_core_of = AST
+				OR = {
+					is_owned_by = ROOT
+					owner = { is_subject_of = ROOT }
 				}
 			}
 		}
@@ -650,12 +652,11 @@
 		relative_position_id = ENG_oceania_focus
 
 		available = {
-			AST = {
-				all_core_states = {
-					OR = {
-						is_owned_by = ENG
-						owner = { is_subject_of = ENG }
-					}
+			any_state = {
+				is_core_of = AST
+				OR = {
+					is_owned_by = ROOT
+					owner = { is_subject_of = ROOT }
 				}
 			}
 		}
@@ -693,12 +694,11 @@
 		relative_position_id = ENG_displace_australian_natives
 
 		available = {
-			AST = {
-				all_core_states = {
-					OR = {
-						is_owned_by = ENG
-						owner = { is_subject_of = ENG }
-					}
+			any_state = {
+				is_core_of = AST
+				OR = {
+					is_owned_by = ROOT
+					owner = { is_subject_of = ROOT }
 				}
 			}
 		}
@@ -739,12 +739,11 @@
 		relative_position_id = ENG_australia
 
 		available = {
-			AST = {
-				all_core_states = {
-					OR = {
-						is_owned_by = ENG
-						owner = { is_subject_of = ENG }
-					}
+			any_state = {
+				is_core_of = AST
+				OR = {
+					is_owned_by = ROOT
+					owner = { is_subject_of = ROOT }
 				}
 			}
 		}
@@ -797,13 +796,11 @@
 
 		available = {
 			MAL = {
-				all_core_states = {
-					limit = {
-						OR = {
-							state = 1320
-							state = 1312
-							state = 1310
-						}
+				any_state = {
+					OR = {
+						state = 1320
+						state = 1312
+						state = 1310
 					}
 					OR = {
 						is_owned_by = ENG
@@ -849,13 +846,11 @@
 
 		available = {
 			MAL = {
-				all_core_states = {
-					limit = {
-						OR = {
-							state = 1320
-							state = 1312
-							state = 1310
-						}
+				any_state = {
+					OR = {
+						state = 1320
+						state = 1312
+						state = 1310
 					}
 					OR = {
 						is_owned_by = ENG
@@ -892,13 +887,11 @@
 
 		available = {
 			MAL = {
-				all_core_states = {
-					limit = {
-						OR = {
-							state = 1320
-							state = 1312
-							state = 1310
-						}
+				any_state = {
+					OR = {
+						state = 1320
+						state = 1312
+						state = 1310
 					}
 					OR = {
 						is_owned_by = ENG
@@ -1618,11 +1611,11 @@
 				}
 				country_event = britain_fpw.6
             }
-			set_global_flag = super_visible
+			# set_global_flag = super_visible
             set_global_flag = fpw_bcw
-            visible = {
-                has_global_flag = super_visible
-            }
+            # visible = {
+            #     has_global_flag = super_visible
+            # }
         }
 	}
 	focus = {

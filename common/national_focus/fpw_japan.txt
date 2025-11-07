@@ -25,7 +25,7 @@ focus_tree = {
 	default = no
 
 #historical
-    focus = {
+	focus = {
 		id = JAP_denounce_shogun
 		icon = GFX_focus_jap_denounce_shogun
 		x = 11
@@ -45,8 +45,8 @@ focus_tree = {
 		}
 		}
 	}
-  
-  	focus = {
+
+	focus = {
 		id = JAP_unite_the_common_people
 		icon = GFX_
 		prerequisite = { focus = JAP_denounce_shogun }
@@ -129,7 +129,7 @@ focus_tree = {
 
 		}
 	}
-  
+
 	focus = {
 		id = JAP_form_satcho_alliance
 		icon = GFX_focus_generic_manpower
@@ -171,7 +171,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = JAP_unite_the_common_people }
 	}
-  
+
 	focus = {
 		id = JAP_secure_western_armaments
 		icon = GFX_focus_jap_secure_western_armaments
@@ -195,7 +195,7 @@ focus_tree = {
 		custom_effect_tooltip = JAP_tt1
 		}
 	}
-  
+
 	focus = {
 		id = JAP_consolidate_imperial_loyalties
 		icon = GFX_focus_jap_imperial_loyalties
@@ -308,153 +308,145 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-		
-		hidden_effect = {
-		set_capital = {state = 528}
-		528 = {
-		set_demilitarized_zone = no
-		}
-		529 = {
-		set_demilitarized_zone = no
-		}
-		530 = {
-		set_demilitarized_zone = no
-		}
-		531 = {
-		set_demilitarized_zone = no
-		}
-		1007 = {
-		set_demilitarized_zone = no
-		}
-		1008 = {
-		set_demilitarized_zone = no
-		}
-		remove_ideas = {
-		fpw_komei
-		fpw_meiji
+				
+			set_capital = {state = 528}
+			528 = {
+				set_demilitarized_zone = no
 			}
-		}
-        start_civil_war = {
-            ruling_party = fascism #Player becomes that
-            ideology = ROOT
-            size = 0.8
-            army_ratio = 0.4
-            navy_ratio = 0.6
-            air_ratio = 0.6
-			  keep_unit_leaders_trigger = {
-			has_trait = jap_emperor_trait
+			529 = {
+				set_demilitarized_zone = no
+			}
+			530 = {
+				set_demilitarized_zone = no
+			}
+			531 = {
+				set_demilitarized_zone = no
+			}
+			1007 = {
+				set_demilitarized_zone = no
+			}
+			1008 = {
+				set_demilitarized_zone = no
+			}
+			remove_ideas = {
+				fpw_komei
+				fpw_meiji
+			}
+			start_civil_war = {
+				ruling_party = fascism #Player becomes that
+				ideology = ROOT
+				size = 0.8
+				army_ratio = 0.4
+				navy_ratio = 0.6
+				air_ratio = 0.6
+				keep_unit_leaders_trigger = {
+					has_trait = jap_emperor_trait
 				}
-            states = { 532 533 534 535 537 555 282 536 989 1592 1593 1594 1595 1596 1597 1598 1599 1600 1601 1602 1604 }  # States controlled by the Tokugawa faction
-            keep_political_leader = yes
-            keep_political_party_members = yes
-        }
-		hidden_effect = {
-		retire_character = JAP_Enomoto_Takeaki
-		retire_character = JAP_Katsu_Kaishu
-		
-		if = {
-			limit = {
-				date < 1867.1.30
-					}
-		create_country_leader = {
-		name = "Kōmei"
-		desc = "JAP_komei_desc"
-		picture = "GFX_Portrait_JAP_komei"
-		expire = "1965.1.1"
-		ideology = jap_imperial
-		traits = { 
-		fpw_trait_emperor_komei
-		}
-		}
-		hidden_effect = {
-			play_song = "miya_san_miya_san"
-		    set_global_flag = super_visible
-            set_global_flag = fpw_bw
-            visible = {
-                has_global_flag = super_visible
-            }
-			clr_country_flag = fpw_secondary_leader_jap_komei
+				states = { 532 533 534 535 537 555 282 536 989 1592 1593 1594 1595 1596 1597 1598 1599 1600 1601 1602 1604 }  # States controlled by the Tokugawa faction
+				keep_political_leader = yes
+				keep_political_party_members = yes
 			}
-		hidden_effect = {
-			clr_country_flag = fpw_secondary_leader_jap_meiji
-			}
+			hidden_effect = {
+				retire_character = JAP_Enomoto_Takeaki
+				retire_character = JAP_Katsu_Kaishu
+				
+				if = {
+					limit = {
+						date < 1867.1.30
 					}
-		if = {
-			limit = {
-				date > 1867.1.29
+					create_country_leader = {
+						name = "Kōmei"
+						desc = "JAP_komei_desc"
+						picture = "GFX_Portrait_JAP_komei"
+						expire = "1965.1.1"
+						ideology = jap_imperial
+						traits = { 
+							fpw_trait_emperor_komei
+						}
 					}
-		create_country_leader = {
-		name = "Emperor Meiji"
-		desc = "JAP_meiji_desc"
-		picture = "GFX_Portrait_JAP_meiji"
-		expire = "1965.1.1"
-		ideology = jap_imperial
-		traits = {  
-		fpw_trait_emperor_meiji
-		}
-		}
+					play_song = "miya_san_miya_san"
+					set_global_flag = super_visible
+					set_global_flag = fpw_bw
+					# visible = {
+					# 	has_global_flag = super_visible
+					# }
+					clr_country_flag = fpw_secondary_leader_jap_komei
+					clr_country_flag = fpw_secondary_leader_jap_meiji
+				
+				}
+				if = {
+					limit = {
+						date > 1867.1.29
 					}
-		
-		set_capital = {
-			state = 531
-		}	
-	
+					create_country_leader = {
+						name = "Emperor Meiji"
+						desc = "JAP_meiji_desc"
+						picture = "GFX_Portrait_JAP_meiji"
+						expire = "1965.1.1"
+						ideology = jap_imperial
+						traits = {  
+							fpw_trait_emperor_meiji
+						}
+					}
+				}
 			
-		
-		mark_focus_tree_layout_dirty = yes
-	
-		
-		every_country_with_original_tag = {
-		original_tag_to_check = JAP 
-		remove_ideas = {
-		jap_high_imperial_opposition
-		}
-        IF = { 
-		limit = { Has_government = neutrality }
-		create_country_leader = {
-		name = "Tokugawa Yoshinobu"
-		desc = ""
-		picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
-		expire = "1965.1.1"
-		ideology = jap_tokugawa
-		traits = { fpw_trait_shogun_yoshinobu }
-		}
-		
-		
-		#load_focus_tree = { tree = japanese_focus keep_completed = yes }
-		#uncomplete_national_focus = {
-		#focus = JAP_denounce_shogun
-		#uncomplete_children = yes
-		#refund_political_power = no
-		#}
-		#complete_national_focus = JAP_continue_the_shogunate_tradition
-		
-		
-		recruit_character = JAP_Enomoto_Takeaki
-		recruit_character = JAP_Katsu_Kaishu
-		}
-		}
-		}
-		hidden_effect = {
-		528 = {
-		remove_dynamic_modifier = { modifier = autonomous_state }
-		}
-		529 = {
-		remove_dynamic_modifier = { modifier = autonomous_state }
-		}
-		530 = {
-		remove_dynamic_modifier = { modifier = autonomous_state }
-		}
-		531 = {
-		remove_dynamic_modifier = { modifier = autonomous_state }
-		}
-		1007 = {
-		remove_dynamic_modifier = { modifier = autonomous_state }
-		}
-		1008 = {
-		remove_dynamic_modifier = { modifier = autonomous_state }
-		}
-		}
+				set_capital = {
+					state = 531
+				}	
+
+				mark_focus_tree_layout_dirty = yes
+
+				every_country_with_original_tag = {
+					original_tag_to_check = JAP 
+					remove_ideas = {
+						jap_high_imperial_opposition
+					}
+					IF = { 
+						limit = { Has_government = neutrality }
+						create_country_leader = {
+							name = "Tokugawa Yoshinobu"
+							desc = ""
+							picture = "GFX_Portrait_JAP_tokugawa_yoshinobu"
+							expire = "1965.1.1"
+							ideology = jap_tokugawa
+							traits = { fpw_trait_shogun_yoshinobu }
+						}
+			
+			
+						#load_focus_tree = { tree = japanese_focus keep_completed = yes }
+						#uncomplete_national_focus = {
+						#focus = JAP_denounce_shogun
+						#uncomplete_children = yes
+						#refund_political_power = no
+						#}
+						#complete_national_focus = JAP_continue_the_shogunate_tradition
+						
+						
+						recruit_character = JAP_Enomoto_Takeaki
+						recruit_character = JAP_Katsu_Kaishu
+					}
+				}
+			}
+			hidden_effect = {
+				528 = {
+					remove_dynamic_modifier = { modifier = autonomous_state }
+				}
+				529 = {
+					remove_dynamic_modifier = { modifier = autonomous_state }
+				}
+				530 = {
+					remove_dynamic_modifier = { modifier = autonomous_state }
+				}
+				531 = {
+					remove_dynamic_modifier = { modifier = autonomous_state }
+				}
+				1007 = {
+					remove_dynamic_modifier = { modifier = autonomous_state }
+				}
+				1008 = {
+					remove_dynamic_modifier = { modifier = autonomous_state }
+				}
+			}
 		}
 	}
 	
@@ -1071,29 +1063,29 @@ focus_tree = {
 	}
 	
 	focus = {
-        id = JAP_taiwanese_campaign
-        icon = GFX_focus_JAP_taiwanese_campaign
-        prerequisite = { focus = JAP_our_sphere_of_influence }
-        relative_position_id = JAP_our_sphere_of_influence
-        x = 0
-        y = 1
-        cost = 10
+		id = JAP_taiwanese_campaign
+		icon = GFX_focus_JAP_taiwanese_campaign
+		prerequisite = { focus = JAP_our_sphere_of_influence }
+		relative_position_id = JAP_our_sphere_of_influence
+		x = 0
+		y = 1
+		cost = 10
 
-        available = {
-        has_country_flag = JAP_ryukyuan_sailors_killed
-        }
+		available = {
+		has_country_flag = JAP_ryukyuan_sailors_killed
+		}
 
-        ai_will_do = {
-            factor = 2
-        }
-        search_filters = { FOCUS_FILTER_HISTORICAL }
-        completion_reward = {
-        custom_effect_tooltip = JAP_tt16
-        CHI = {
-        country_event = fpw_japan.50
-        }
+		ai_will_do = {
+			factor = 2
+		}
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+		custom_effect_tooltip = JAP_tt16
+		CHI = {
+		country_event = fpw_japan.50
+		}
 
-        hidden_effect = {
+		hidden_effect = {
 		1176 = { transfer_state_to = ROOT }
 		CHI = {
 		set_province_controller = 11914
@@ -1122,9 +1114,9 @@ focus_tree = {
 					owner = ROOT
 				}
 			}
-        }
-        }
-    }
+		}
+		}
+	}
 	
 	focus = {
 		id = JAP_seize_the_bonin_islands
@@ -1628,40 +1620,40 @@ focus_tree = {
 	}
 	
 	
-  
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-  
 
-  
 	
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  	focus = {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
 		id = JAP_continue_the_shogunate_tradition
 		icon = GFX_focus_jap_tokugawa_crest
 		x = 30
@@ -1681,11 +1673,11 @@ focus_tree = {
 		
 		}
 	}
-  
-  
-  
-  
-  focus = {
+
+
+
+
+focus = {
 		id = JAP_lay_foundations_for_industrialization
 		icon = GFX_focus_generic_industry_1
 		x = 37
@@ -1733,7 +1725,7 @@ focus_tree = {
 	
 	focus = {
 		id = JAP_improve_national_infrastructure
-        icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = JAP_lay_foundations_for_industrialization }
 		relative_position_id = JAP_lay_foundations_for_industrialization
 		x = -3
@@ -2198,12 +2190,12 @@ focus_tree = {
 	focus = {
 		id = JAP_construct_the_first_railway
 		icon = GFX_goal_continuous_non_factory_construct
-        prerequisite = { focus = JAP_import_western_technologies }
+		prerequisite = { focus = JAP_import_western_technologies }
 		prerequisite = { focus = JAP_modernize_taxation }
-        relative_position_id = JAP_lay_foundations_for_industrialization
-        x = 0
-        y = 4
-        cost = 10
+		relative_position_id = JAP_lay_foundations_for_industrialization
+		x = 0
+		y = 4
+		cost = 10
 
 		available = {
 			controls_state = 282
@@ -2211,12 +2203,12 @@ focus_tree = {
 		available = {
 			has_civil_war = no
 		}
-        ai_will_do = {
-            factor = 2
-        }
+		ai_will_do = {
+			factor = 2
+		}
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
-        search_filters = { FOCUS_FILTER_HISTORICAL }
-        completion_reward = {
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
 		282 = {
 		add_building_construction = {
 			type = supply_node
@@ -2241,8 +2233,8 @@ focus_tree = {
 			}
 			
 		}
-        }
-    }
+		}
+	}
 	
 	
 	
@@ -3209,21 +3201,21 @@ focus_tree = {
 	
 	
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  focus = {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+focus = {
 		id = JAP_modernize_the_military_system
 		icon = GFX_focus_jap_modernize_military
 		x = 48
@@ -3660,13 +3652,13 @@ focus_tree = {
 	}
 	
 
-  
- 
-  
-  
-  
-  
-  focus = {
+
+
+
+
+
+
+focus = {
 		id = JAP_focus_on_our_strengths
 		icon = GFX_focus_jap_focus_on_our_strengths
 		x = 58

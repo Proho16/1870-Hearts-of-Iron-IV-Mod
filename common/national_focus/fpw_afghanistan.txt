@@ -122,9 +122,9 @@
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				   type = industrial_complex
-				   level = 2
-				   instant_build = yes
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 		}
@@ -299,33 +299,33 @@
 			445 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				   type = industrial_complex
-				   level = 2
-				   instant_build = yes
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 			415 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				   type = industrial_complex
-				   level = 2
-				   instant_build = yes
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 			442 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				   type = industrial_complex
-				   level = 2
-				   instant_build = yes
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 			267 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				   type = industrial_complex
-				   level = 2
-				   instant_build = yes
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 		}
@@ -506,25 +506,25 @@
 		completion_reward = {
 			445 = {
 				add_resource = {
-		            type = steel
-		            amount = 9
-	            }
+					type = steel
+					amount = 9
+				}
 			}
 			415 = {
 				add_resource = {
-		            type = steel
-		            amount = 12
-	            }
+					type = steel
+					amount = 12
+				}
 			}
 			267 = {
 				add_resource = {
-		            type = steel
-		            amount = 24
-	            }
+					type = steel
+					amount = 24
+				}
 				add_resource = {
-		            type = tungsten
-		            amount = 12
-	            }
+					type = tungsten
+					amount = 12
+				}
 			}
 		}
 		
@@ -704,9 +704,9 @@
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				   type = industrial_complex
-				   level = 2
-				   instant_build = yes
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 			custom_effect_tooltip = afg_economic_tooltip
@@ -741,9 +741,9 @@
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				   type = industrial_complex
-				   level = 2
-				   instant_build = yes
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 			custom_effect_tooltip = afg_economic_tooltip
@@ -771,9 +771,9 @@
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				   type = industrial_complex
-				   level = 2
-				   instant_build = yes
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 
@@ -802,9 +802,9 @@
 			267 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				   type = industrial_complex
-				   level = 2
-				   instant_build = yes
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 		}
@@ -830,25 +830,25 @@
 		completion_reward = {
 			445 = {
 				add_resource = {
-		            type = steel
-		            amount = 9
-	            }
+					type = steel
+					amount = 9
+				}
 			}
 			415 = {
 				add_resource = {
-		            type = steel
-		            amount = 12
-	            }
+					type = steel
+					amount = 12
+				}
 			}
 			267 = {
 				add_resource = {
-		            type = steel
-		            amount = 24
-	            }
+					type = steel
+					amount = 24
+				}
 				add_resource = {
-		            type = tungsten
-		            amount = 12
-	            }
+					type = tungsten
+					amount = 12
+				}
 			}
 		}
 		
@@ -872,9 +872,9 @@
 		completion_reward = {
 			267 = {
 				add_resource = {
-		            type = steel
-		            amount = 48
-	            }
+					type = steel
+					amount = 48
+				}
 			}
 		}
 		ai_will_do = {
@@ -1909,10 +1909,10 @@
 			hidden_effect = {
 				play_song = "sultan_qalbam"
 				set_global_flag = super_visible
-            	set_global_flag = fpw_aaw
-            	# visible = {
-                # 	has_global_flag = super_visible
-            	# }
+				set_global_flag = fpw_aaw
+				# visible = {
+				# 	has_global_flag = super_visible
+				# }
 			}
 			
 			
@@ -2282,9 +2282,9 @@
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				   type = industrial_complex
-				   level = 2
-				   instant_build = yes
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 		}
@@ -2809,17 +2809,17 @@
 		completion_reward = {
 			415 = {
 				add_extra_state_shared_building_slots = 2
-         		add_building_construction = {
-            		type = industrial_complex
-            		level = 2
-           			instant_build = yes
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
 			}
 			415 = {
-         		add_building_construction = {
-            		type = infrastructure
-            		level = 2
-           			instant_build = yes
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -3259,9 +3259,9 @@
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				   type = industrial_complex
-				   level = 2
-				   instant_build = yes
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 		}
@@ -4407,104 +4407,104 @@
 				value = 0.025
 			}
 			291 = { add_core_of = ROOT }
-            410 = { add_core_of = ROOT }
-            414 = { add_core_of = ROOT }
-            416 = { add_core_of = ROOT }
-            418 = { add_core_of = ROOT }
-            411 = { add_core_of = ROOT }
-            412 = { add_core_of = ROOT }
-            413 = { add_core_of = ROOT }
-            266 = { add_core_of = ROOT }
-            421 = { add_core_of = ROOT }
-            417 = { add_core_of = ROOT }
-            420 = { add_core_of = ROOT }
-            419 = { add_core_of = ROOT }
-            676 = { add_core_of = ROOT }
+			410 = { add_core_of = ROOT }
+			414 = { add_core_of = ROOT }
+			416 = { add_core_of = ROOT }
+			418 = { add_core_of = ROOT }
+			411 = { add_core_of = ROOT }
+			412 = { add_core_of = ROOT }
+			413 = { add_core_of = ROOT }
+			266 = { add_core_of = ROOT }
+			421 = { add_core_of = ROOT }
+			417 = { add_core_of = ROOT }
+			420 = { add_core_of = ROOT }
+			419 = { add_core_of = ROOT }
+			676 = { add_core_of = ROOT }
 			742 = { add_core_of = ROOT }
-            830 = { add_core_of = ROOT }
-            405 = { add_core_of = ROOT }
-            584 = { add_core_of = ROOT }
-            832 = { add_core_of = ROOT }
-            831 = { add_core_of = ROOT }
-            823 = { add_core_of = ROOT }
-            587 = { add_core_of = ROOT }
-            402 = { add_core_of = ROOT }
-            585 = { add_core_of = ROOT }
-            732 = { add_core_of = ROOT }
+			830 = { add_core_of = ROOT }
+			405 = { add_core_of = ROOT }
+			584 = { add_core_of = ROOT }
+			832 = { add_core_of = ROOT }
+			831 = { add_core_of = ROOT }
+			823 = { add_core_of = ROOT }
+			587 = { add_core_of = ROOT }
+			402 = { add_core_of = ROOT }
+			585 = { add_core_of = ROOT }
+			732 = { add_core_of = ROOT }
 			680 = { add_core_of = ROOT }
-            677 = { add_core_of = ROOT }
-            799 = { add_core_of = ROOT }
-            990 = { add_core_of = ROOT }
-            992 = { add_core_of = ROOT }
-            675 = { add_core_of = ROOT }
-            993 = { add_core_of = ROOT }
-            854 = { add_core_of = ROOT }
-            553 = { add_core_of = ROOT }
-            554 = { add_core_of = ROOT }
-            455 = { add_core_of = ROOT }
-            454 = { add_core_of = ROOT }
-            855 = { add_core_of = ROOT }
-            679 = { add_core_of = ROOT }
-            856 = { add_core_of = ROOT }
-            765 = { add_core_of = ROOT }
-            857 = { add_core_of = ROOT }
-            292 = { add_core_of = ROOT }
-            859 = { add_core_of = ROOT }
-            294 = { add_core_of = ROOT }
-            991 = { add_core_of = ROOT }
-            659 = { add_core_of = ROOT }
+			677 = { add_core_of = ROOT }
+			799 = { add_core_of = ROOT }
+			990 = { add_core_of = ROOT }
+			992 = { add_core_of = ROOT }
+			675 = { add_core_of = ROOT }
+			993 = { add_core_of = ROOT }
+			854 = { add_core_of = ROOT }
+			553 = { add_core_of = ROOT }
+			554 = { add_core_of = ROOT }
+			455 = { add_core_of = ROOT }
+			454 = { add_core_of = ROOT }
+			855 = { add_core_of = ROOT }
+			679 = { add_core_of = ROOT }
+			856 = { add_core_of = ROOT }
+			765 = { add_core_of = ROOT }
+			857 = { add_core_of = ROOT }
+			292 = { add_core_of = ROOT }
+			859 = { add_core_of = ROOT }
+			294 = { add_core_of = ROOT }
+			991 = { add_core_of = ROOT }
+			659 = { add_core_of = ROOT }
 			352 = { add_core_of = ROOT }
-            800 = { add_core_of = ROOT }
-            984 = { add_core_of = ROOT }
-            354 = { add_core_of = ROOT }
-            353 = { add_core_of = ROOT }
-            350 = { add_core_of = ROOT }
-            344 = { add_core_of = ROOT }
-            349 = { add_core_of = ROOT }
-            355 = { add_core_of = ROOT }
-            798 = { add_core_of = ROOT }
-            348 = { add_core_of = ROOT }
-            356 = { add_core_of = ROOT }
-            345 = { add_core_of = ROOT }
-            346 = { add_core_of = ROOT }
-            49 = { add_core_of = ROOT }
-            347 = { add_core_of = ROOT }
-            342 = { add_core_of = ROOT }
-            343 = { add_core_of = ROOT }
-            340 = { add_core_of = ROOT }
-            339 = { add_core_of = ROOT }
-            164 = { add_core_of = ROOT }
-            183 = { add_core_of = ROOT }
-            187 = { add_core_of = ROOT }
-            182 = { add_core_of = ROOT }
-            797 = { add_core_of = ROOT }
+			800 = { add_core_of = ROOT }
+			984 = { add_core_of = ROOT }
+			354 = { add_core_of = ROOT }
+			353 = { add_core_of = ROOT }
+			350 = { add_core_of = ROOT }
+			344 = { add_core_of = ROOT }
+			349 = { add_core_of = ROOT }
+			355 = { add_core_of = ROOT }
+			798 = { add_core_of = ROOT }
+			348 = { add_core_of = ROOT }
+			356 = { add_core_of = ROOT }
+			345 = { add_core_of = ROOT }
+			346 = { add_core_of = ROOT }
+			49 = { add_core_of = ROOT }
+			347 = { add_core_of = ROOT }
+			342 = { add_core_of = ROOT }
+			343 = { add_core_of = ROOT }
+			340 = { add_core_of = ROOT }
+			339 = { add_core_of = ROOT }
+			164 = { add_core_of = ROOT }
+			183 = { add_core_of = ROOT }
+			187 = { add_core_of = ROOT }
+			182 = { add_core_of = ROOT }
+			797 = { add_core_of = ROOT }
 			453 = { add_core_of = ROOT }
-            446 = { add_core_of = ROOT }
-            457 = { add_core_of = ROOT }
-            447 = { add_core_of = ROOT }
-            452 = { add_core_of = ROOT }
-            663 = { add_core_of = ROOT }
-            451 = { add_core_of = ROOT }
-            450 = { add_core_of = ROOT }
-            449 = { add_core_of = ROOT }
-            662 = { add_core_of = ROOT }
-            661 = { add_core_of = ROOT }
-            957 = { add_core_of = ROOT }
-            448 = { add_core_of = ROOT }
-            665 = { add_core_of = ROOT }
-            458 = { add_core_of = ROOT }
-            457 = { add_core_of = ROOT }
-            456 = { add_core_of = ROOT }
-            452 = { add_core_of = ROOT }
-            551 = { add_core_of = ROOT }
-            886 = { add_core_of = ROOT }
-            550 = { add_core_of = ROOT }
-            883 = { add_core_of = ROOT }
-            268 = { add_core_of = ROOT }
-            1022 = { add_core_of = ROOT }
-            513 = { add_core_of = ROOT }
-            460 = { add_core_of = ROOT }
-            459 = { add_core_of = ROOT }
+			446 = { add_core_of = ROOT }
+			457 = { add_core_of = ROOT }
+			447 = { add_core_of = ROOT }
+			452 = { add_core_of = ROOT }
+			663 = { add_core_of = ROOT }
+			451 = { add_core_of = ROOT }
+			450 = { add_core_of = ROOT }
+			449 = { add_core_of = ROOT }
+			662 = { add_core_of = ROOT }
+			661 = { add_core_of = ROOT }
+			957 = { add_core_of = ROOT }
+			448 = { add_core_of = ROOT }
+			665 = { add_core_of = ROOT }
+			458 = { add_core_of = ROOT }
+			457 = { add_core_of = ROOT }
+			456 = { add_core_of = ROOT }
+			452 = { add_core_of = ROOT }
+			551 = { add_core_of = ROOT }
+			886 = { add_core_of = ROOT }
+			550 = { add_core_of = ROOT }
+			883 = { add_core_of = ROOT }
+			268 = { add_core_of = ROOT }
+			1022 = { add_core_of = ROOT }
+			513 = { add_core_of = ROOT }
+			460 = { add_core_of = ROOT }
+			459 = { add_core_of = ROOT }
 			hidden_effect = {
 				news_event = {
 					hours = 6
@@ -4795,9 +4795,9 @@
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-				   type = industrial_complex
-				   level = 2
-				   instant_build = yes
+				type = industrial_complex
+				level = 2
+				instant_build = yes
 				}
 			}
 		}
