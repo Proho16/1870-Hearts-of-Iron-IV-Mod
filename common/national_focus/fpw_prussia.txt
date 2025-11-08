@@ -314,54 +314,61 @@ focus_tree = {
 			custom_effect_tooltip = prs_fund_seperatist_tt
 
 			hidden_effect = {
-				add_resistance_target = {
-    				id = 9
-   					amount = 23
-    				occupied = CZE
-    				occupier = AUS
-    				days = 180
+				9 = {
+					add_resistance_target = {
+						amount = 23
+						occupied = CZE
+						occupier = AUS
+						days = 180
+					}
 				}
-				add_resistance_target = {
-    				id = 75
-   					amount = 26
-    				occupied = CZE
-    				occupier = AUS
-    				days = 180
+				75 = {
+					add_resistance_target = {
+						amount = 26
+						occupied = CZE
+						occupier = AUS
+						days = 180
+					}
 				}
-				add_resistance_target = {
-    				id = 69
-   					amount = 30
-    				occupied = CZE
-    				occupier = AUS
-    				days = 180
-				}	
-				add_resistance_target = {
-    				id = 74
-   					amount = 31
-    				occupied = CZE
-    				occupier = AUS
-    				days = 180
+				69 = {
+					add_resistance_target = {
+						amount = 30
+						occupied = CZE
+						occupier = AUS
+						days = 180
+					}
 				}
-				add_resistance_target = {
-    				id = 155
-   					amount = 26
-    				occupied = HUN
-    				occupier = AUS
-    				days = 180
+				74 = {
+					add_resistance_target = {
+						amount = 31
+						occupied = CZE
+						occupier = AUS
+						days = 180
+					}
 				}
-				add_resistance_target = {
-    				id = 43
-   					amount = 28
-    				occupied = HUN
-    				occupier = AUS
-    				days = 180
+				155 = {
+					add_resistance_target = {
+						amount = 26
+						occupied = HUN
+						occupier = AUS
+						days = 180
+					}
 				}
-				add_resistance_target = {
-    				id = 154
-   					amount = 32
-    				occupied = HUN
-    				occupier = AUS
-    				days = 180
+				43 = {
+					add_resistance_target = {
+						amount = 28
+						occupied = HUN
+						occupier = AUS
+						days = 180
+					}
+				}
+				154 = {
+					add_resistance_target = {
+						amount = 32
+						occupied = HUN
+						occupier = AUS
+						days = 180
+					}
 				}
 			}
 		}
@@ -4076,10 +4083,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		
 		available_if_capitulated = yes
-		
-		hidden_effect = {
 
-		}
 		completion_reward = {
 			country_event = prussia_fpw.46
 		}
@@ -4671,22 +4675,16 @@ focus = {
 		id = PRS_settle_trade_disputes
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = PRS_prussian_bank }
-		available = {
-		}
 		x = 0
 		y = 1
 		relative_position_id = PRS_prussian_bank
 		cost = 10
-	
-		
-		
+
 		available_if_capitulated = yes
 	
 		completion_reward = {
 			remove_ideas = prs_fpw_trade_disputes
 			add_ideas = free_trade
-		}
-		hidden_effect = {
 		}
 	}
 	focus = {
