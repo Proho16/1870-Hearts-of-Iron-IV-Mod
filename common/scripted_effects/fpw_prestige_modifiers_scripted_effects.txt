@@ -191,6 +191,38 @@ give_prestige_modifiers = {
 			NOT = {
 				TUR = {		
 					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_3
+					}
+				}
+			}
+		}
+		TUR = {
+			add_dynamic_modifier = { 
+				modifier = fpw_TUR_sick_man_of_europe_3
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				TUR = {		
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_4
+					}
+				}
+			}
+		}
+		TUR = {
+			add_dynamic_modifier = { 
+				modifier = fpw_TUR_sick_man_of_europe_4
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				TUR = {		
+					has_dynamic_modifier = {
 						modifier = fpw_victors_of_the_crimean_war
 					}
 				}
@@ -405,6 +437,30 @@ apply_prestige_modifier_effetcs = {
 			}
 			set_temp_variable = { prestige_to_remove = 150 }
 			multiply_temp_variable = { prestige_to_remove = 0.2 }
+			subtract_from_variable = { THIS.country_base_prestige = prestige_to_remove }
+		}
+		if = {
+			limit = {
+				THIS = {		
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_3
+					}
+				}
+			}
+			set_temp_variable = { prestige_to_remove = 150 }
+			multiply_temp_variable = { prestige_to_remove = 0.10 }
+			subtract_from_variable = { THIS.country_base_prestige = prestige_to_remove }
+		}
+		if = {
+			limit = {
+				THIS = {		
+					has_dynamic_modifier = {
+						modifier = fpw_TUR_sick_man_of_europe_4
+					}
+				}
+			}
+			set_temp_variable = { prestige_to_remove = 150 }
+			multiply_temp_variable = { prestige_to_remove = 0.05 }
 			subtract_from_variable = { THIS.country_base_prestige = prestige_to_remove }
 		}
 
