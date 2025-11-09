@@ -15,4 +15,20 @@ on_actions = {
 
 
 	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					date > 1866.11.7
+					date < 1866.11.9
+				}
+				TUR = {
+					country_event = fpw_ottoman.2
+				}
+			}
+					
+		}
+
+
+	}
 }

@@ -98,6 +98,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_ideas = fpw_TUR_revolt_in_crete
 			182 = {
 				set_demilitarized_zone = no
 			}
@@ -393,8 +394,9 @@ focus_tree = {
 			}
 		}
 	}
+	### hist
 	focus = {
-		id = TUR_create_a_constitution
+		id = TUR_continue_the_reforms
 		icon = GFX_focus_generic_treaty
 
 		#search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -428,9 +430,71 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			remove_ideas = fpw_TUR_tanzimat_economic_era
+		}
+	}
+	### Sick man of europe
+	focus = {
+		id = TUR_take_a_tour_of_europe
+		icon = GFX_focus_GER_european_confederation
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_continue_the_reforms
+		prerequisite = {
+			focus = TUR_continue_the_reforms 
+			focus = TUR_no_restraints_on_the_sultan
+		}
+		
+		completion_reward = {
+			hidden_effect = {
+				remove_dynamic_modifier = {
+					modifier = fpw_TUR_sick_man_of_europe
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = fpw_TUR_sick_man_of_europe_2
+			}
+		}
+	}
+	focus = {
+		id = TUR_restore_our_legitimacy
+		icon = GFX_focus_generic_support_the_left_right
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_take_a_tour_of_europe
+		prerequisite = {
+			focus = TUR_take_a_tour_of_europe
+		}
+		
+		completion_reward = {
 			
 		}
 	}
+	### Non hist
 	focus = {
 		id = TUR_no_restraints_on_the_sultan
 		icon = GFX_focus_generic_monarchy_1
@@ -466,7 +530,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			remove_ideas = fpw_TUR_tanzimat_economic_era
 		}
 	}
 }

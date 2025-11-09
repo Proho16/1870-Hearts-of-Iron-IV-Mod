@@ -30,8 +30,12 @@
 
  fpw_TUR_sick_man_of_europe:0 "Sick man of Europe"
  fpw_TUR_sick_man_of_europe_2:0 "Sick man of Europe"
+ fpw_TUR_sick_man_of_europe_3:0 "Sick man of Europe"
+ fpw_TUR_sick_man_of_europe_4:0 "Sick man of Europe"
  prestige_modifier_sick_man_of_europe:0 "Country Base Prestige: §R-30%§!"
  prestige_modifier_sick_man_of_europe_2:0 "Country Base Prestige: §R-20%§!"
+ prestige_modifier_sick_man_of_europe_3:0 "Country Base Prestige: §R-10%§!"
+ prestige_modifier_sick_man_of_europe_2:0 "Country Base Prestige: §R-5%§!"
 
  fpw_EGY_suez_built:0 "Suez Canal built"
  prestige_modifier_suez_built:0 "Country Base Prestige: §G+15%§!"
