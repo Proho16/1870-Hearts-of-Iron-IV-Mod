@@ -137,6 +137,98 @@ ideas = {
 				consumer_goods_factor = 0.2
 			}
 		}
+		fpw_TUR_agrarian_economy_2 = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = LIT_invested_in_farms
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.25
+				production_speed_buildings_factor = -0.1
+				line_change_production_efficiency_factor = -0.25
+				consumer_goods_factor = 0.2
+			}
+		}
+		fpw_TUR_agrarian_economy_3 = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = LIT_invested_in_farms
+
+			modifier = {
+				production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor = -0.05
+				line_change_production_efficiency_factor = -0.15
+				consumer_goods_factor = 0.10
+			}
+		}
+		fpw_TUR_inefficient_tax_farming = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = RAJ_taxes
+
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+		}
+		fpw_TUR_inefficient_tax_farming_2 = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = RAJ_taxes
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		fpw_TUR_income_tax = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = RAJ_taxes
+
+			modifier = {
+				consumer_goods_factor = -0.10
+				add_stability = -0.05
+			}
+		}
 		fpw_TUR_tanzimat_economic_era = {
 			allowed = {
 				tag = TUR
@@ -402,6 +494,116 @@ ideas = {
 				consumer_goods_factor = 0.15
 				production_speed_buildings_factor = 0.10
 
+			}
+		}
+		fpw_TUR_sponsered_building = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture = MEX_revolutionary_army
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_infrastructure_factor = 0.15
+
+			}
+		}
+		fpw_TUR_sanayi_nizamnamesi = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture = MEX_revolutionary_army
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		fpw_TUR_chamber_of_commerce = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture = MEX_revolutionary_army
+
+			modifier = {
+				trade_opinion_factor = 0.25
+				production_speed_industrial_complex_factor = 0.05
+				consumer_goods_factor = -0.025
+			}
+		}
+		fpw_TUR_statistical_efficiency = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture = MEX_revolutionary_army
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		fpw_TUR_helping_military_industries = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture = MEX_revolutionary_army
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+		fpw_TUR_european_production_methods = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			#picture = MEX_revolutionary_army
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
 			}
 		}
 

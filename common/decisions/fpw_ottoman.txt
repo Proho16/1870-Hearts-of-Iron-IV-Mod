@@ -477,7 +477,10 @@ fpw_TUR_restoring_legitimacy = {
 		icon = mission_icon
 		cost = 5
 		complete_effect = {
-			add_ideas = fpw_TUR_suez_canal_opened
+			add_timed_idea = {
+				idea = fpw_TUR_industrial_investments
+				days = 180
+			}
 			add_timed_idea = {
 				idea = fpw_TUR_legitmacy_efforts
 				days = 180

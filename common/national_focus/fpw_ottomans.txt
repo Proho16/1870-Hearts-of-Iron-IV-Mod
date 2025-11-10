@@ -134,7 +134,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR_continue_turkish_dominance
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_full_social_mobilization
 
 		#search_filters = { FOCUS_FILTER_HISTORICAL }
 
@@ -195,6 +195,22 @@ focus_tree = {
 			add_timed_idea = {
 				idea = fpw_TUR_reformed_civilian_projects
 				days = 360
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
 			}
 		}
 	}
@@ -531,6 +547,871 @@ focus_tree = {
 		
 		completion_reward = {
 			remove_ideas = fpw_TUR_tanzimat_economic_era
+		}
+	}
+	### Economy Tree
+	focus = {
+		id = TUR_begin_fiscal_reforms
+		icon = GFX_focus_generic_currency_reforms
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 20
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = TUR_tanzimat_era
+		}
+		available_if_capitulated = yes
+		#relative_position_id = 
+		prerequisite = {
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = TUR_abolish_tax_farming
+		icon = GFX_focus_RAJ_war_taxes
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_political_power > 100
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_begin_fiscal_reforms
+		prerequisite = {
+			focus = TUR_begin_fiscal_reforms
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fpw_TUR_inefficient_tax_farming
+				add_idea = fpw_TUR_inefficient_tax_farming_2
+			}
+			add_political_power = -100
+		}
+	}
+	focus = {
+		id = TUR_subsidize_local_businesses
+		icon = GFX_focus_generic_industry_3
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			count_triggers = {
+				amount = 5
+				985 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				341 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				797 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				340 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				347 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				343 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				49 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				342 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				356 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				345 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				346 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				348 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				344 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				798 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				984 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				354 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+			}
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_begin_fiscal_reforms
+		prerequisite = {
+			focus = TUR_begin_fiscal_reforms
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fpw_TUR_agrarian_economy
+				add_idea = fpw_TUR_agrarian_economy_2
+			}
+		}
+	}
+	focus = {
+		id = TUR_sponser_urbanization
+		icon = GFX_focus_SWE_urbanization
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = -2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_subsidize_local_businesses
+		prerequisite = {
+			focus = TUR_subsidize_local_businesses
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_TUR_sponsered_building
+		}
+	}
+	focus = {
+		id = TUR_peasent_land_reform
+		icon = GFX_focus_ITA_peasants_rise
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_political_power > 50
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_subsidize_local_businesses
+		prerequisite = {
+			focus = TUR_subsidize_local_businesses
+		}
+		
+		completion_reward = {
+			add_political_power = -50
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = TUR_establish_income_tax
+		icon = GFX_focus_generic_economic_recovery
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_subsidize_local_businesses
+		prerequisite = {
+			focus = TUR_subsidize_local_businesses
+		}
+		prerequisite = {
+			focus = TUR_abolish_tax_farming
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fpw_TUR_inefficient_tax_farming_2
+				add_idea = fpw_TUR_income_tax
+			}
+		}
+	}
+	focus = {
+		id = TUR_empower_the_council_of_state
+		icon = GFX_focus_RAJ_special_economic_zones
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			count_triggers = {
+				amount = 10
+				985 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				341 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				797 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				340 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				347 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				343 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				49 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				342 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				356 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				345 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				346 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				348 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				344 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				798 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				984 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+				354 = {
+					infrastructure > 2
+					is_owned_and_controlled_by = TUR
+				}
+			}
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_peasent_land_reform
+		prerequisite = {
+			focus = TUR_peasent_land_reform
+		}
+		prerequisite = {
+			focus = TUR_sponser_urbanization
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = fpw_TUR_agrarian_economy_2
+				add_idea = fpw_TUR_agrarian_economy_3
+			}
+		}
+	}
+	focus = {
+		id = TUR_reform_customs_admistration
+		icon = GFX_SOV_war_economy_ccp_2d_sov_compatibility
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = -1
+		y = 1
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_empower_the_council_of_state
+		prerequisite = {
+			focus = TUR_empower_the_council_of_state
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = TUR_found_chamber_of_commerce
+		icon = GFX_focus_generic_monetary_union
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 2
+		y = 1
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_empower_the_council_of_state
+		prerequisite = {
+			focus = TUR_empower_the_council_of_state
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_TUR_chamber_of_commerce
+		}
+	}
+	focus = {
+		id = TUR_open_statistical_office
+		icon = GFX_focus_generic_self_management
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 2
+		y = 1
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_found_chamber_of_commerce
+		prerequisite = {
+			focus = TUR_found_chamber_of_commerce
+		}
+		
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = fpw_TUR_statistical_efficiency
+		}
+	}
+	focus = {
+		id = TUR_encourage_domestic_industry
+		icon = GFX_goal_generic_construction
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = -1
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_found_chamber_of_commerce
+		prerequisite = {
+			focus = TUR_found_chamber_of_commerce
+		}
+		prerequisite = {
+			
+		}
+		
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_move_away_from_agriculture_based_eco
+		icon = GFX_goal_generic_construct_infrastructure
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 1
+		y = 2
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_found_chamber_of_commerce
+		prerequisite = {
+			focus = TUR_open_statistical_office
+		}
+		prerequisite = {
+			focus = TUR_encourage_domestic_industry
+		}
+		
+		completion_reward = {
+			remove_ideas = fpw_TUR_agrarian_economy_3
+		}
+	}
+	focus = {
+		id = TUR_subsidize_military_industries
+		icon = GFX_focus_generic_reorient_production
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = -3
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_encourage_domestic_industry
+		prerequisite = {
+			focus = TUR_encourage_domestic_industry
+		}
+		prerequisite = {
+			focus = TUR_reform_customs_admistration
+		}
+		prerequisite = {
+			
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_TUR_helping_military_industries
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_utilize_european_production_methods
+		icon = GFX_goal_generic_production2
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_subsidize_military_industries
+		prerequisite = {
+			focus = TUR_subsidize_military_industries
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_TUR_european_production_methods
+		}
+	}
+	focus = {
+		id = TUR_subsidize_the_navy
+		icon = GFX_focus_generic_navy_battleship2
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_subsidize_military_industries
+		prerequisite = {
+			focus = TUR_subsidize_military_industries
+		}
+		
+		completion_reward = {
+			remove_ideas = fpw_TUR_over_sized_navy_two
+		}
+	}
+	focus = {
+		id = TUR_imperial_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_subsidize_the_navy
+		prerequisite = {
+			focus = TUR_subsidize_the_navy
+		}
+		
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_imperial_dockyards_2
+		icon = GFX_goal_generic_construct_naval_dockyard
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_imperial_dockyards
+		prerequisite = {
+			focus = TUR_imperial_dockyards
+		}
+		
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_imperial_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_utilize_european_production_methods
+		prerequisite = {
+			focus = TUR_utilize_european_production_methods
+		}
+		
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_imperial_military_factories_2
+		icon = GFX_goal_generic_construct_mil_factory
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 0
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_imperial_military_factories
+		prerequisite = {
+			focus = TUR_imperial_military_factories
+		}
+		
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = TUR_sanayi_nizamnamesi
+		icon = GFX_focus_AFG_a_modern_economy
+
+		#search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		relative_position_id = TUR_peasent_land_reform
+		prerequisite = {
+			focus = TUR_peasent_land_reform
+		}
+		prerequisite = {
+			focus = TUR_establish_income_tax
+		}
+		
+		completion_reward = {
+			add_ideas = fpw_TUR_sanayi_nizamnamesi
 		}
 	}
 }

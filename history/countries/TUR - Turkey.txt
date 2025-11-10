@@ -16,6 +16,7 @@ fpw_TUR_dated_army
 fpw_TUR_on_going_reform
 fpw_TUR_over_sized_navy
 fpw_TUR_agrarian_economy
+fpw_TUR_inefficient_tax_farming
 }
 
 
