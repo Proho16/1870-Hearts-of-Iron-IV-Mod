@@ -606,6 +606,42 @@ ideas = {
 				line_change_production_efficiency_factor = 0.15
 			}
 		}
+		fpw_TUR_modernized_ottoman_economy = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = HABSBURG_economy
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.15
+			}
+		}
+		fpw_TUR_modernized_ottoman_economy_2 = {
+			allowed = {
+				tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = HABSBURG_economy
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.25
+			}
+		}
 
 }
 	hidden_ideas = {

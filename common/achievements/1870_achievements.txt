@@ -168,7 +168,7 @@ hearts_of_iron_achievement = {
 	}
 
 	happened = {
-		has_completed_focus = AUS_victor_of_the_apw
+		has_completed_focus = AUS_peace_of_prague
 	}
 }
 

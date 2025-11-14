@@ -27,14 +27,8 @@ bookmarks = {
 			ideology = democratic
 			available = { always = yes }
 			ideas = {
-				fpw_AUS_hungarian_seperatism
-				fpw_AUS_divided_military
-				fpw_AUS_stagnant_economy1
 			}
 			focuses = {
-				AUS_prepare_looming_conflict
-				AUS_ausgleich_negotiations
-				AUS_victor_of_the_apw
 			}
 		}
 		
@@ -122,19 +116,20 @@ bookmarks = {
             }
         }
 
-        #"TUR" = {
-		    #minor = yes
-           #history = "TUR_1866_DESC"
-            #ideology = neutrality
-            #available = { always = yes }
-            #ideas = {
-                #fpw_TUR_multi_ethnic_state
-                #fpw_TUR_dated_army
-                #fpw_TUR_agrarian_economy
-            #}
-            #focuses = {
-            #}
-        #}
+        "TUR" = {
+		    minor = yes
+            history = "TUR_1866_DESC"
+            ideology = neutrality
+            available = { always = yes }
+            ideas = {
+                fpw_TUR_multi_ethnic_state
+                fpw_TUR_dated_army
+                fpw_TUR_agrarian_economy
+            }
+            focuses = {
+                TUR_restore_our_legitimacy
+            }
+        }
 
         "JAP"={
 		    minor = yes

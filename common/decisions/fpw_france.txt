@@ -7,10 +7,8 @@ fpw_france_debts_category = {
 		cost = 250
 
 		available = {
-			AND = {
-				original_tag = FRA
-				has_idea = fpw_FRA_indemnity_debts_4
-			}
+			original_tag = FRA
+			has_idea = fpw_FRA_indemnity_debts_4
 		}
 		
 		visible = {
@@ -91,13 +89,11 @@ fpw_france_debts_category = {
 		complete_effect = {
 			every_state = {
 				limit = {
-					AND = {
-						is_owned_by = PRS
-						OR = {
-							state = 974
-							state = 973
-							state = 17
-						}
+					is_owned_by = PRS
+					OR = {
+						state = 974
+						state = 973
+						state = 17
 					}
 				}
 				transfer_state_to = FRA
