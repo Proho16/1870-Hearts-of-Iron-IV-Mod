@@ -28,14 +28,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
-				date < 1949.1.1
-			} 
-		}
-		DEN_aat = no #Denmark has custom election events
-		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		NOT = {
 			OR = {
@@ -84,14 +76,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
-				date < 1949.1.1
-			} 
-		}
-		DEN_aat = no #Denmark has custom election events
-		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_war = no
 		OR = {
@@ -160,25 +144,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
-				date < 1949.1.1
-			} 
-			AND = { 
-				tag = GRE 
-				#has_dlc = "Battle for the Bosporus"
-			} 
-			AND = {
-				has_dlc = "Trial of Allegiance"
-				tag = BRA
-			}
-		}
-		DEN_aat = no #Denmark has custom election events
-		NOR_AAT = no
-		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
-		NOT = { has_idea = fascism_defeated }
 		fascism > 0.15
 	}
 	
@@ -230,27 +196,6 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
-				date < 1949.1.1
-			} 
-			AND = { 
-				tag = GRE 
-				#has_dlc = "Battle for the Bosporus"
-			} 
-			AND = { 
-				tag = CHL 
-				has_dlc = "Trial of Allegiance"
-			} 
-			AND = {
-				has_dlc = "Trial of Allegiance"
-				tag = BRA
-			}
-		}
-		DEN_aat = no #Denmark has custom election events
-		NOR_AAT = no
-		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		NOT = { has_idea = communism_defeated }
 		communism > 0.15
@@ -326,27 +271,6 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
-				date < 1949.1.1
-			}
-			AND = {
-				NOR_AAT = yes
-				date < 1949.1.1
-			} 
-			AND = { 
-				tag = GRE 
-				#has_dlc = "Battle for the Bosporus"
-			} 
-			AND = {
-				has_dlc = "Trial of Allegiance"
-				tag = BRA
-			}
-		}
-		DEN_aat = no #Denmark has custom election events
-		NOR_aat = no
-		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		democratic < 0.5
 		fascism < 0.5
@@ -363,14 +287,6 @@ country_event = {
 			}
 		}
 		trigger = {
-			NOT = {
-				AND = {
-					has_dlc = "Arms Against Tyranny"
-					tag = DEN
-					is_subject = yes
-					var:DEN.DEN_overlord_nation = { has_government = communism }
-				}
-			}
 		}
 		add_popularity = {
 			ideology = fascism
@@ -389,14 +305,6 @@ country_event = {
 			}
 		}
 		trigger = {
-			NOT = {
-				AND = {
-					has_dlc = "Arms Against Tyranny"
-					tag = DEN
-					is_subject = yes
-					var:DEN.DEN_overlord_nation = { has_government = fascism }
-				}
-			}
 		}
 		add_popularity = {
 			ideology = communism
@@ -434,23 +342,6 @@ country_event = {
 	}
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
-				date < 1949.1.1
-			} 
-			AND = { 
-				tag = GRE 
-				#has_dlc = "Battle for the Bosporus"
-			} 
-			AND = {
-				has_dlc = "Trial of Allegiance"
-				tag = BRA
-			}
-		}
-		DEN_aat = no #Denmark has custom election events
-		NOR_aat = no 
-		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_country_flag = coalition_with_fascists
 		any_other_country = {
@@ -517,23 +408,6 @@ country_event = {
 	}
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
-				date < 1949.1.1
-			} 
-			AND = { 
-				tag = GRE 
-				#has_dlc = "Battle for the Bosporus"
-			} 
-			AND = {
-				has_dlc = "Trial of Allegiance"
-				tag = BRA
-			}
-		}
-		DEN_aat = no #Denmark has custom election events
-		NOR_aat = no 
-		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_country_flag = coalition_with_communists
 		any_other_country = {
@@ -602,30 +476,6 @@ country_event = {
 		has_government = democratic
 		fascism > 0.5
 		is_puppet = no
-		DEN_aat = no #Denmark has custom election events
-		NOR_AAT = no 
-		NOT = {
-			AND = {
-				original_tag = SPR
-				has_dlc = "La Resistance"
-			}
-			AND = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				original_tag = SWI
-				has_dlc = "By Blood Alone"
-			}
-			AND = {
-				has_dlc = "Trial of Allegiance"
-				tag = BRA
-			}
-		}
 	}
 	
 	option = {	
@@ -665,22 +515,6 @@ country_event = {
 		has_government = democratic
 		communism > 0.5
 		is_puppet = no
-		DEN_aat = no #Denmark has custom election events
-		NOR_AAT = no 
-		NOT = {
-			AND = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				original_tag = TUR
-				has_dlc = "Battle for the Bosporus"
-			}
-			AND = {
-				has_dlc = "Trial of Allegiance"
-				tag = BRA
-			}
-		}
 	}
 	
 	option = {
@@ -716,12 +550,6 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = {
-				Tag = USA
-				date < 1949.1.1
-			}
-		}
 		has_government = democratic
 		has_idea_with_trait = motorized_equipment_manufacturer
 	}
@@ -768,13 +596,6 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
-				date < 1949.1.1
-			} 
-		}
-		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_war = yes
 	}
@@ -827,13 +648,6 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
-				date < 1949.1.1
-			} 
-		}
-		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_war = yes
 		any_war_score < 20
@@ -888,13 +702,6 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
-				date < 1949.1.1
-			} 
-		}
-		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = fascism
 		fascism > 0.5
 	}
@@ -915,13 +722,6 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { 
-			AND = { 
-				tag = USA 
-				date < 1949.1.1
-			}
-		}
-		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = fascism
 		NOT = { fascism > 0.5 }
 	}
