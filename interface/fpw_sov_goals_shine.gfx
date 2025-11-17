@@ -29,6 +29,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+		legacy_lazy_load = no
 	}
 	SpriteType = {
 		name = "GFX_focus_SOV_russian_army_shine"
@@ -59,6 +60,7 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
+		legacy_lazy_load = no
 	}
 	
 }
