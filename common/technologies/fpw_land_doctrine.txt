@@ -368,7 +368,9 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		enable_tactic = tactic_unexpected_thrust
-		breakthrough = 0.05
+		category_cavalry = {
+			breakthrough = 0.05
+		}
 				
 		path = {
 			leads_to_tech = artillery_support 
