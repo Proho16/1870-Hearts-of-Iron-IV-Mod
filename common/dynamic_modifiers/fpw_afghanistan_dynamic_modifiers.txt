@@ -1,6 +1,6 @@
 fpw_AFG_afghan_modernized_economy = {
 	enable = { always = yes }
-	icon = 
+	icon = GFX_afg_wip
 
 	production_speed_buildings_factor = afg_construction_speed_factor
 	industrial_capacity_factory = afg_factory_output_factor
@@ -21,7 +21,7 @@ fpw_AFG_afghan_modernized_economy = {
 }
 fpw_AFG_afghan_agricultural_economy = {
 	enable = { always = yes }
-	icon = 
+	icon = GFX_afg_wip
 
 	production_speed_buildings_factor = afg_construction_speed_factor
 	industrial_capacity_factory = afg_factory_output_factor
@@ -42,7 +42,7 @@ fpw_AFG_afghan_agricultural_economy = {
 }
 fpw_AFG_radical_elements_incouraged = {
 	enable = { always = yes }
-	icon = 
+	icon = GFX_afg_wip
 
 	stability_factor = afg_stability_factor
 	army_attack_factor = afg_army_attack

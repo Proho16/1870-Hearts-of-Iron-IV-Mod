@@ -11,7 +11,6 @@ PRS_monarchist = {
 				rule = PRS_ai_behavior
 				option = MONARCHISM
 			}
-			has_country_flag = PRS_AI_RANDOM_MONARCHIST
 		}
 	}
 	abort = {
@@ -50,11 +49,6 @@ PRS_monarchist = {
 	ideas = {
 		
 	}
-
-	traits = {
-
-	}
-
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -117,10 +111,6 @@ PRS_socialist = {
 
 	ideas = {
 		
-	}
-
-	traits = {
-
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -187,10 +177,6 @@ PRS_const_monarchy = {
 		
 	}
 
-	traits = {
-
-	}
-
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -252,10 +238,6 @@ PRS_democratic = {
 
 	ideas = {
 		
-	}
-
-	traits = {
-
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -327,10 +309,6 @@ PRS_avenger = {
 		
 	}
 
-	traits = {
-
-	}
-
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -393,10 +371,6 @@ PRS_hre = {
 
 	ideas = {
 		
-	}
-
-	traits = {
-
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
@@ -463,11 +437,7 @@ PRS_greater_german = {
 	ideas = {
 		
 	}
-
-	traits = {
-
-	}
-
+	
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {

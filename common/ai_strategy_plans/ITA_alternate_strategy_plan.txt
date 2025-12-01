@@ -49,10 +49,6 @@ ITA_habsburg = {
 		
 	}
 
-	traits = {
-
-	}
-
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -122,10 +118,6 @@ ITA_democratic = {
 		
 	}
 
-	traits = {
-
-	}
-
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {
@@ -191,10 +183,6 @@ ITA_roman = {
 
 	ideas = {
 		
-	}
-
-	traits = {
-
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)

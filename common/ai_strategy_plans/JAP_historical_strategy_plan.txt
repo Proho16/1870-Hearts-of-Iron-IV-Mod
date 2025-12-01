@@ -16,7 +16,6 @@ JAP_historical = {
 					}
 				}	
 			}
-			has_country_flag = JAP_AI_RANDOM_DEFAULT
 			has_game_rule = {
 				rule = JAP_ai_behavior
 				option = HISTORICAL
@@ -48,11 +47,7 @@ JAP_historical = {
 	ideas = {
 		
 	}
-
-	traits = {
-
-	}
-
+	
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {

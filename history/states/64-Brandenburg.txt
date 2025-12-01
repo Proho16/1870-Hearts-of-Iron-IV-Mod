@@ -1,8 +1,8 @@
 
 state={
-resources={
-wood=13
-}
+	resources={
+	wood=13
+	}
 
 	id=64
 	name="STATE_64"
